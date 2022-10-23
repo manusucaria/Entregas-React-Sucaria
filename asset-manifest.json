@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Entregas-React-Sucaria/static/css/main.60c36adc.css",
+    "main.css": "/Entregas-React-Sucaria/static/css/main.b5f12303.css",
     "main.js": "/Entregas-React-Sucaria/static/js/main.04e3c3e9.js",
     "static/media/portada.jpg": "/Entregas-React-Sucaria/static/media/portada.97ff46dabcd5e677d9af.jpg",
     "index.html": "/Entregas-React-Sucaria/index.html",
-    "main.60c36adc.css.map": "/Entregas-React-Sucaria/static/css/main.60c36adc.css.map",
+    "main.b5f12303.css.map": "/Entregas-React-Sucaria/static/css/main.b5f12303.css.map",
     "main.04e3c3e9.js.map": "/Entregas-React-Sucaria/static/js/main.04e3c3e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.60c36adc.css",
+    "static/css/main.b5f12303.css",
     "static/js/main.04e3c3e9.js"
   ]
 }
