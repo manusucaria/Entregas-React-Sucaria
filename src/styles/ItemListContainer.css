@@ -10,6 +10,8 @@ h1{
 .contenedor-signos{
     margin: 0 auto 1.5rem auto;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .contenedor-cantidades {
     margin: 3rem auto 0 auto;
@@ -20,8 +22,8 @@ h1{
     cursor: pointer;
     font-weight: 800;
     border-radius: 50%;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 4rem;
+    width: 4rem;
     border: 1px solid black;
     font-size: 2rem;
     margin-right: 2rem;
@@ -31,8 +33,8 @@ h1{
     cursor: pointer;
     font-weight: 800;
     border-radius: 50%;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 4rem;
+    width: 4rem;
     border: 1px solid black;
     font-size: 2rem;
     margin-left: 2rem;
