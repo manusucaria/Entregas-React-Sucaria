@@ -1,0 +1,53 @@
+.contenedor-itemlist{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    margin: 3rem auto 0 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.contenedor-signos{
+    margin: 0 auto 1.5rem auto;
+    display: flex;
+}
+.contenedor-cantidades {
+    margin: 3rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.signo-menos{
+    cursor: pointer;
+    font-weight: 800;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid black;
+    font-size: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+.signo-mas {
+    cursor: pointer;
+    font-weight: 800;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid black;
+    font-size: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+}
+.numero-cantidades{
+    font-size: 3rem;
+    margin: auto 0;
+}
+.boton-agregar{
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid blue;
+    background-color: white;
+    cursor: pointer;
+}
