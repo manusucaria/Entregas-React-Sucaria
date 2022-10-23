@@ -1,9 +1,10 @@
 .contenedor-itemlist{
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
 }
 h1{
-    margin: 3rem auto 0 1rem;
+    margin: 0 auto 0 1.8rem;
     font-size: 3rem;
     font-weight: 600;
 }
