@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/ItemListContainer.css';
+import MostrarCantidad from './MostrarCantidad';
 
 const ItemListContainer = ({greeting}) => {
     return (
@@ -7,9 +8,7 @@ const ItemListContainer = ({greeting}) => {
             <h1>{greeting}</h1>
             <div className= "contenedor-cantidades">
                 <div className= "contenedor-signos">
-                    <p className= "signo-menos">-</p>
-                    <p className= "numero-cantidades">3</p>
-                    <p className= "signo-mas">+</p>
+                    <MostrarCantidad />
                 </div>
                 <button className='boton-agregar'>Agregar al Carrito</button>
             </div>
