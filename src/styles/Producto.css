@@ -1,0 +1,75 @@
+.cantidades{
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.contenedor-numero{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.numero-cantidades {
+    font-size: 3rem;
+    margin: auto;
+}
+.signo-menos {
+    cursor: pointer;
+    font-weight: 800;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    border: 1px solid black;
+    font-size: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+.signo-mas {
+    cursor: pointer;
+    font-weight: 800;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    border: 1px solid black;
+    font-size: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+}
+.boton-agregar {
+    font-size: 2.5rem;
+    font-weight: 400;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid blue;
+    background-color: white;
+    cursor: pointer;
+}
+.producto{
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+}
+.datos-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-producto{
+    margin: auto;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.nombre-producto{
+    font-size: 3rem;
+    font-weight: 500;
+    margin: auto;
+}
+.precio-producto{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: auto;
+}

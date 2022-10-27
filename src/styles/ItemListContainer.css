@@ -1,6 +1,7 @@
 .contenedor-itemlist{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin-top: 2rem;
 }
 h1{
@@ -13,18 +14,13 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .contenedor-cantidades {
     margin: 3rem auto 0 auto;
     display: flex;
     flex-direction: column;
 }
-.boton-agregar{
-    font-size: 2.5rem;
-    font-weight: 400;
-    padding: 1rem;
-    border-radius: 1rem;
-    border: 1px solid blue;
-    background-color: white;
-    cursor: pointer;
+.productos{
+    margin-bottom: 10.5rem;
 }
