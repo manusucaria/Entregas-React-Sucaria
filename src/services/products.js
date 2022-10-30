@@ -19,7 +19,7 @@ const products = [
 ]
 export const getProductos = () => {
     const task = new Promise((resolve, reject) => {
-            resolve(products)
+        resolve(products)
     });
     return task
 };

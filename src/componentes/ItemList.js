@@ -1,27 +1,18 @@
 import React from 'react';
 import Item from './Item';
 import "../styles/ItemList.css";
+import { getProductos } from '../services/products';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
-
-const productos = [
-    {
-        nombre: "Lemon Pie",
-        imagen: "lemon",
-        precio: "$700 (por porción)"
-    },
-    {
-        nombre: "Budin de Chocolate",
-        imagen: "budinchocolate",
-        precio: "$900"
-    },
-    {
-        nombre: "Milhojas",
-        imagen: "milhojas",
-        precio: "$700 (por porción)"
-    },
-]
 
 const ItemList = () => {
+    const [productos, setProductos] = useState([]);
+    useEffect(() => {
+        getProductos().then( data => {
+            setProductos(data)
+        })
+    }, []);
     return (
         <div className='contenedor-signos'>
             {productos.map( (producto, i) =>
