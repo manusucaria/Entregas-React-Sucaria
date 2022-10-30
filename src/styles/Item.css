@@ -45,10 +45,11 @@
     border: 1px solid blue;
     background-color: white;
     cursor: pointer;
+    margin-bottom: 3rem;
 }
 .producto{
     display: flex;
-    width: 50vw;
+    width: 40vw;
     flex-direction: column;
 }
 .datos-producto{

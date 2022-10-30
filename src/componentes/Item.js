@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import '../styles/Producto.css';
+import '../styles/Item.css';
 
-const Producto = (props) => {
+const Item = (props) => {
     let [contador, setContador] = useState(1);
     let suma = () => {
         setContador(contador >= 10 ? contador : contador + 1)
@@ -12,7 +12,7 @@ const Producto = (props) => {
     }
     let comprado = () => {
     alert("Producto Agregado")
-}
+    }
     return (
         <div className='producto'>
             <div className='datos-producto'>
@@ -20,9 +20,9 @@ const Producto = (props) => {
                 <p className='nombre-producto'>{props.nombre}</p>
                 <p className='precio-producto'>{props.precio}</p>
                 <div className='cantidades'>
-                    <p onClick={suma} className= "signo-mas">+</p>
-                    <p className= "numero-cantidades">{contador}</p>
                     <p onClick={resta} className= "signo-menos">-</p>
+                    <p className= "numero-cantidades">{contador}</p>
+                    <p onClick={suma} className= "signo-mas">+</p>
                 </div>
                 <button onClick={comprado} className='boton-agregar'>Agregar al Carrito</button>
             </div>
@@ -30,5 +30,6 @@ const Producto = (props) => {
     )
 }
 
-export default Producto
+export default Item;
+
 
