@@ -1,5 +1,8 @@
+.producto{
+    margin-bottom: 2rem;
+}
 .cantidades{
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     margin-bottom: .5rem;
     display: flex;
     gap: 3rem;
@@ -25,6 +28,10 @@
     margin-right: 2rem;
     text-align: center;
 }
+.signo-menos:hover {
+    background-color: #89D9D9;
+    color: rgb(251, 251, 251);
+}
 .signo-mas {
     cursor: pointer;
     font-weight: 800;
@@ -36,16 +43,24 @@
     margin-left: 2rem;
     text-align: center;
 }
+.signo-mas:hover {
+    background-color: #89D9D9;
+    color: rgb(251, 251, 251);
+}
 .boton-agregar {
     font-size: 2.5rem;
     font-weight: 400;
     width: 100%;
     padding: 1rem;
     border-radius: 1rem;
-    border: 1px solid blue;
-    background-color: white;
+    border: 1px solid white;
+    background-color: #D98B48;
     cursor: pointer;
     margin-bottom: 3rem;
+}
+.boton-agregar:hover {
+    transition: all .5s ease;
+    background-color: #f69e51;
 }
 .producto{
     display: flex;
@@ -63,6 +78,7 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+    margin-bottom: .6rem;
 }
 .nombre-producto{
     font-size: 3rem;

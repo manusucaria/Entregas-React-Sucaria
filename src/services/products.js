@@ -16,6 +16,11 @@ const products = [
         imagen: "milhojas",
         precio: "$700 (por porción)"
     },
+    {
+        nombre: "Chocotorta",
+        imagen: "chocotorta",
+        precio: "$690 (por porción)"
+    }
 ]
 export const getProductos = () => {
     const task = new Promise((resolve, reject) => {

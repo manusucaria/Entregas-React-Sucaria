@@ -9,10 +9,11 @@ const NavBar = () => {
             <img className= "foto-portada" src={fotoPortada} alt="Foto de Portada" />
             <div className= "contenedor-lista">
                 <p className= "listas">Inicio</p>
+                <p className= "listas">Productos</p>
                 <p className= "listas">Carrito</p>
                 <p className= "listas">Sobre Nosotros</p>
             </div>
-            <CartWidget />
+            <CartWidget className= "carrito"/>
         </nav>
   )
 }

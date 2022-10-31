@@ -1,27 +1,38 @@
 .contenedor-nav {
     display: flex;
+    border-bottom: solid 1px #D98B48;
 }
 .contenedor-lista {
     display: flex;
-    margin: auto 3rem auto 3rem;
+    margin: auto;
     justify-content: space-around;
 }
 .foto-portada {
     cursor: pointer;
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin: .7rem 0 .7rem 1rem;
     border-radius: 50%;
     object-fit: cover;
-    height: 15rem;
-    width: 15rem;
-    box-shadow: 1px rgba(0, 0, 0, 9%);
+    height: 16rem;
+    width: 16rem;
+}
+.foto-portada:hover{
+    rotate: 360deg;
+    transition: rotate 3s ease;
 }
 .listas {
     cursor: pointer;
-    border-radius: 1rem;
+    border-radius: .5rem;
     font-size: 2.5rem;
-    margin: 0 1rem;
-    padding: .5rem;
-    color: rgb(65, 39, 65);
-    border: 1px solid black;
+    margin: auto 2rem;
+    padding: .5rem 1rem;
+
+
+}
+.listas:hover{
+    transition: all .5s ease;
+    background-color: #f69e51;
+}
+.carrito{
+    margin-left: auto;
+    margin-right: 20rem;
 }

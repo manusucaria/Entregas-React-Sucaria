@@ -15,7 +15,7 @@ const ItemList = () => {
     return (
         <div className='contenedor-signos'>
             {productos.map( (producto, i) =>
-                <Item className="productos"
+                <Item
                     imagen = {producto.imagen}
                     nombre = {producto.nombre}
                     precio = {producto.precio}

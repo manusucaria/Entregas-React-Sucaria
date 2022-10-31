@@ -4,8 +4,8 @@
     flex-wrap: wrap;
     margin-top: 2rem;
 }
-h1 {
-    margin: 0 auto 0 1.9rem;
-    font-size: 3rem;
+.titulo{
+    margin: 3rem auto;
+    font-size: 4rem;
     font-weight: 600;
 }
