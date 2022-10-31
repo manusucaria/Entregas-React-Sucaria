@@ -1,4 +1,3 @@
-import React from 'react';
 import Item from './Item';
 import "../styles/ItemList.css";
 import { getProductos } from '../services/products';

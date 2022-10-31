@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/ItemListContainer.css';
 import ItemList from './ItemList';
 
