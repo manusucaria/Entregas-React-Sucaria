@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/Entregas-React-Sucaria/static/css/main.63673fe6.css",
-    "main.js": "/Entregas-React-Sucaria/static/js/main.88fce06e.js",
-    "static/media/chocotorta.jpg": "/Entregas-React-Sucaria/static/media/chocotorta.2cc61a3ffef4d3449a3c.jpg",
+    "main.css": "/Entregas-React-Sucaria/static/css/main.7933e45f.css",
+    "main.js": "/Entregas-React-Sucaria/static/js/main.5e95bc8d.js",
+    "static/media/chocotorta.jpg": "/Entregas-React-Sucaria/static/media/chocotorta.5cf1424e74ae980f2dbe.jpg",
     "static/media/milhojas.jpg": "/Entregas-React-Sucaria/static/media/milhojas.b29ec250f8af6c4281c5.jpg",
     "static/media/budinchocolate.jpg": "/Entregas-React-Sucaria/static/media/budinchocolate.cf2af1bffc80b3c5dcd7.jpg",
     "static/media/lemon.jpg": "/Entregas-React-Sucaria/static/media/lemon.f5796a3d8bfc0d189f16.jpg",
     "static/media/portada.jpg": "/Entregas-React-Sucaria/static/media/portada.d3dbcbebc5b2a3e7ca8a.jpg",
+    "static/media/copyright.ico": "/Entregas-React-Sucaria/static/media/copyright.bac4f0a6a97e0fbd6f71.ico",
     "index.html": "/Entregas-React-Sucaria/index.html",
-    "main.63673fe6.css.map": "/Entregas-React-Sucaria/static/css/main.63673fe6.css.map",
-    "main.88fce06e.js.map": "/Entregas-React-Sucaria/static/js/main.88fce06e.js.map"
+    "main.7933e45f.css.map": "/Entregas-React-Sucaria/static/css/main.7933e45f.css.map",
+    "main.5e95bc8d.js.map": "/Entregas-React-Sucaria/static/js/main.5e95bc8d.js.map"
   },
   "entrypoints": [
-    "static/css/main.63673fe6.css",
-    "static/js/main.88fce06e.js"
+    "static/css/main.7933e45f.css",
+    "static/js/main.5e95bc8d.js"
   ]
 }
