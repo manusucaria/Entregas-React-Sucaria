@@ -1,10 +1,9 @@
-import '../styles/ItemListContainer.css';
-import ItemList from './ItemList';
+import '../styles/ItemDetailContainer.css';
+import ItemDetail from './ItemDetail';
 import { getProductos } from '../services/products';
 import { useEffect, useState } from 'react';
 
-
-const ItemListContainer = ({greeting}) => {
+const ItemDetailContainer = () => {
     const [productos, setProductos] = useState([]);
     useEffect(() => {
         getProductos().then( data => {
@@ -12,11 +11,10 @@ const ItemListContainer = ({greeting}) => {
         })
     }, []);
     return (
-        <div className= "contenedor-itemlist">
-            <h1 className='titulo'>{greeting}</h1>
-            <ItemList productos = {productos}/>
+        <div className= "contenedor-itemDetail">
+            <ItemDetail productos = {productos}/>
         </div>
     )
 }
 
-export default ItemListContainer;
+export default ItemDetailContainer

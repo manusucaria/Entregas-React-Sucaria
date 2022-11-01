@@ -1,11 +1,9 @@
 import Item from './Item';
-import "../styles/ItemList.css";
+import '../styles/ItemDetail.css';
 
-
-
-const ItemList = ({productos}) => {
+const ItemDetail = ({productos}) => {
     return (
-        <div className='contenedor-signos'>
+        <div className='contenedor-signos-detail'>
             {productos.map( (producto, i) =>
                 <Item
                     producto = {producto}
@@ -16,4 +14,4 @@ const ItemList = ({productos}) => {
     )
 }
 
-export default ItemList
+export default ItemDetail

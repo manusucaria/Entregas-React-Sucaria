@@ -1,0 +1,6 @@
+.contenedor-itemDetail {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
