@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Item.css';
 
 const Item = ({producto}) => {
@@ -24,6 +25,7 @@ const Item = ({producto}) => {
                     <p onClick={suma} className= "signo-mas">+</p>
                 </div>
                 <button onClick={comprado} className='boton-agregar'>Agregar al Carrito</button>
+                <Link to={"/Entregas-React-Sucaria/item/"+producto.nombre}>Ver producto</Link>
             </div>
         </div>
     )

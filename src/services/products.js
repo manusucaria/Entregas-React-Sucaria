@@ -1,5 +1,3 @@
-
-
 const products = [
     {
         nombre: "Lemon Pie",
