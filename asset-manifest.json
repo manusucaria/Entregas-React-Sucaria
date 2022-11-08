@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "Entregas-React-Sucaria/static/css/main.1d3ae056.css",
-    "main.js": "Entregas-React-Sucaria/static/js/main.74d1cdf6.js",
+    "main.css": "Entregas-React-Sucaria/static/css/main.a48cb9ac.css",
+    "main.js": "Entregas-React-Sucaria/static/js/main.b63180ae.js",
     "static/media/chocotorta.jpg": "Entregas-React-Sucaria/static/media/chocotorta.5cf1424e74ae980f2dbe.jpg",
     "static/media/milhojas.jpg": "Entregas-React-Sucaria/static/media/milhojas.b29ec250f8af6c4281c5.jpg",
     "static/media/budinchocolate.jpg": "Entregas-React-Sucaria/static/media/budinchocolate.cf2af1bffc80b3c5dcd7.jpg",
@@ -9,11 +9,11 @@
     "static/media/portada.jpg": "Entregas-React-Sucaria/static/media/portada.d3dbcbebc5b2a3e7ca8a.jpg",
     "static/media/copyright.ico": "Entregas-React-Sucaria/static/media/copyright.bac4f0a6a97e0fbd6f71.ico",
     "index.html": "Entregas-React-Sucaria/index.html",
-    "main.1d3ae056.css.map": "Entregas-React-Sucaria/static/css/main.1d3ae056.css.map",
-    "main.74d1cdf6.js.map": "Entregas-React-Sucaria/static/js/main.74d1cdf6.js.map"
+    "main.a48cb9ac.css.map": "Entregas-React-Sucaria/static/css/main.a48cb9ac.css.map",
+    "main.b63180ae.js.map": "Entregas-React-Sucaria/static/js/main.b63180ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d3ae056.css",
-    "static/js/main.74d1cdf6.js"
+    "static/css/main.a48cb9ac.css",
+    "static/js/main.b63180ae.js"
   ]
 }
