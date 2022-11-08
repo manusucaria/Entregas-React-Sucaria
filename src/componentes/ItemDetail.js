@@ -1,15 +1,31 @@
-import Item from './Item';
-import '../styles/ItemDetail.css';
 
-const ItemDetail = ({productos}) => {
+import '../styles/ItemDetail.css';
+import { useState } from 'react';
+
+const ItemDetail = ({producto}) => {
+    let [contador, setContador] = useState(1);
+    let suma = () => {
+        setContador(contador >= 10 ? contador : contador + 1)
+    }
+    let resta = () => {
+        setContador(contador <= 1 ? contador : contador - 1)
+    }
+    let comprado = () => {
+    alert("Producto Agregado")
+    }
     return (
-        <div className='contenedor-signos-detail'>
-            {productos.map( (producto, i) =>
-                <Item
-                    producto = {producto}
-                    key={i}
-                />
-            )}
+        <div className='producto'>
+            <div className='datos-producto'>
+                <img className='imagen-producto' src={require(`../assets/img/productos/${producto.imagen}.jpg`)} alt="Foto de Producto" />
+                <p className='nombre-producto'>{producto.nombre}</p>
+                <p className='precio-producto'>{producto.precio}</p>
+                <div className='cantidades'>
+                    <p onClick={resta} className= "signo-menos">-</p>
+                    <p className= "numero-cantidades">{contador}</p>
+                    <p onClick={suma} className= "signo-mas">+</p>
+                </div>
+                <button onClick={comprado} className='boton-agregar'>Agregar al Carrito</button>
+            </div>
         </div>
     )
 }

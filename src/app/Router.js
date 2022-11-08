@@ -9,7 +9,7 @@ const Router = () => (
     <BrowserRouter>
         <Routes>
             <Route element={<Layout />} path={process.env.PUBLIC_URL}>
-                <Route index path="" element={<ItemListContainer />}/>
+                <Route index element={<ItemListContainer />}/>
                 <Route path="itemdetailcontainer" element={<ItemDetailContainer />}/>
                 <Route path="Cart" element={<Cart />}/>
                 <Route path="Nosotros" element={<Nosotros />}/>

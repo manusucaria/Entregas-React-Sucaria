@@ -12,11 +12,12 @@ const ItemDetailContainer = () => {
             setProductos(data)
         })
     }, []);
-
+    const buscarProducto = productos.find(producto => {
+        return producto.id === id;
+    })
     return (
         <div className= "contenedor-itemDetail">
-        {id}
-            <ItemDetail productos = {productos}/>
+            {buscarProducto && <ItemDetail producto = {buscarProducto}/>}
         </div>
     )
 }

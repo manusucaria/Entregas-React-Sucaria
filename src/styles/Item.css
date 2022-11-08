@@ -1,50 +1,11 @@
-.cantidades{
-    margin-top: 1rem;
-    margin-bottom: .5rem;
-    display: flex;
-    gap: 3rem;
-    align-items: center;
-}
-.contenedor-numero{
-    display: flex;
-    align-items: center;
-    margin: 0;
-}
+
 .numero-cantidades {
     font-size: 3rem;
     margin: auto;
 }
-.signo-menos {
-    cursor: pointer;
-    font-weight: 800;
-    border-radius: 50%;
-    height: 4rem;
-    width: 4rem;
-    border: 1px solid black;
-    font-size: 2rem;
-    margin-right: 2rem;
+.boton-detalles {
+    color: black;
     text-align: center;
-}
-.signo-menos:hover {
-    transition: all .3s ease;
-    background-color: #89D9D9;
-}
-.signo-mas {
-    cursor: pointer;
-    font-weight: 800;
-    border-radius: 50%;
-    height: 4rem;
-    width: 4rem;
-    border: 1px solid black;
-    font-size: 2rem;
-    margin-left: 2rem;
-    text-align: center;
-}
-.signo-mas:hover {
-    transition: all .3s ease;
-    background-color: #89D9D9;
-}
-.boton-agregar {
     font-size: 2.5rem;
     font-weight: 400;
     width: 100%;
@@ -54,8 +15,11 @@
     background-color: #D98B48;
     cursor: pointer;
     margin-bottom: 3rem;
+    margin-top: 1rem;
+    text-decoration: none;
 }
-.boton-agregar:hover {
+.boton-detalles:hover {
+    color: black;
     transition: all .5s ease;
     background-color: #f69e51;
 }
@@ -86,10 +50,5 @@
 .nombre-producto{
     font-size: 3rem;
     font-weight: 500;
-    margin: auto;
-}
-.precio-producto{
-    font-size: 2rem;
-    font-weight: 300;
     margin: auto;
 }

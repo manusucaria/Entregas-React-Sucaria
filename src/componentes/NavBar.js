@@ -16,7 +16,9 @@ const NavBar = () => {
                 <NavLink to={process.env.PUBLIC_URL + "/Cart"} className= "listas">Carrito</NavLink>
                 <NavLink to={process.env.PUBLIC_URL + "/Nosotros"} className= "listas">Sobre Nosotros</NavLink>
             </div>
-            <CartWidget className= "carrito"/>
+            <Link to={process.env.PUBLIC_URL + "/Cart"} className='contenedor-carrito'>
+                <CartWidget className= "carrito"/>
+            </Link>
         </nav>
   )
 }
