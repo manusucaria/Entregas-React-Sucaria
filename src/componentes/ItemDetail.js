@@ -1,17 +1,12 @@
 
 import '../styles/ItemDetail.css';
-import { useState } from 'react';
+import { useMyContext } from '../context/cartContext';
+import ItemCount from './ItemCount';
 
 const ItemDetail = ({producto}) => {
-    let [contador, setContador] = useState(1);
-    let suma = () => {
-        setContador(contador >= 10 ? contador : contador + 1)
-    }
-    let resta = () => {
-        setContador(contador <= 1 ? contador : contador - 1)
-    }
+    const [state, setState] = useMyContext();
     let comprado = () => {
-    alert("Producto Agregado")
+        setState(producto)
     }
     return (
         <div className='producto'>
@@ -19,11 +14,7 @@ const ItemDetail = ({producto}) => {
                 <img className='imagen-producto' src={require(`../assets/img/productos/${producto.imagen}.jpg`)} alt="Foto de Producto" />
                 <p className='nombre-producto'>{producto.nombre}</p>
                 <p className='precio-producto'>{producto.precio}</p>
-                <div className='cantidades'>
-                    <p onClick={resta} className= "signo-menos">-</p>
-                    <p className= "numero-cantidades">{contador}</p>
-                    <p onClick={suma} className= "signo-mas">+</p>
-                </div>
+                <ItemCount />
                 <button onClick={comprado} className='boton-agregar'>Agregar al Carrito</button>
             </div>
         </div>

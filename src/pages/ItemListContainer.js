@@ -2,19 +2,20 @@ import '../styles/ItemListContainer.css';
 import ItemList from '../componentes/ItemList';
 import { getProductos } from '../services/products';
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([]);
-
+    let {idTipo} = useParams();
     useEffect(() => {
-        getProductos().then( data => {
+        getProductos(idTipo).then( data => {
             setProductos(data)
         })
-    }, []);
+    }, [idTipo]);
     let filtroBudin = () => {
-        const filtroBudin = productos.filter(producto => producto.tipo === "budin")
-        setProductos(filtroBudin)
+        const filtroTorta = productos.filter(producto => producto.tipo === "budin")
+        setProductos(filtroTorta)
     }
     let filtroTorta = () => {
         const filtroTorta = productos.filter(producto => producto.tipo === "torta")
@@ -39,3 +40,4 @@ const ItemListContainer = () => {
 }
 
 export default ItemListContainer;
+

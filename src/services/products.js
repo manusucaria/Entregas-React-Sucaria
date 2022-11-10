@@ -34,3 +34,9 @@ export const getProductos = () => {
     });
     return task
 };
+export const getTortas = (idTipo) => {
+    const task = new Promise((resolve, reject) => {
+        resolve(idTipo?products.filter(product => product.tipo === idTipo):products)
+    });
+    return task
+};

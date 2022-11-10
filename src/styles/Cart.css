@@ -1,0 +1,4 @@
+.contenedor-prod.carrito{
+    display: flex;
+    flex-direction: row;
+}
