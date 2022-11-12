@@ -3,36 +3,24 @@ import ItemList from '../componentes/ItemList';
 import { getProductos } from '../services/products';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([]);
-    let {idTipo} = useParams();
+    const {idTipo} = useParams();
     useEffect(() => {
-        getProductos(idTipo).then( data => {
+        getProductos(idTipo).then(data => {
             setProductos(data)
         })
     }, [idTipo]);
-    let filtroBudin = () => {
-        const filtroTorta = productos.filter(producto => producto.tipo === "budin")
-        setProductos(filtroTorta)
-    }
-    let filtroTorta = () => {
-        const filtroTorta = productos.filter(producto => producto.tipo === "torta")
-        setProductos(filtroTorta)
-    }
-    let filtroTodas = () => {
-        getProductos().then( data => {
-            setProductos(data)
-        })
-    }
     return (
         <div className= "contenedor-itemlist">
             <h1 className='titulo'>Bienvenidos</h1>
             <div className='categorias'>
-                <p onClick={filtroBudin} className='listas-categorias'>Budines</p>
-                <p onClick={filtroTodas} className='listas-categorias'>Todas</p>
-                <p onClick={filtroTorta} className='listas-categorias'>Tortas</p>
+                <Link className='listas-categorias' to={process.env.PUBLIC_URL + '/productos/budines'}>Budines</Link>
+                <Link className='listas-categorias' to={process.env.PUBLIC_URL + '/productos'}>Todas</Link>
+                <Link className='listas-categorias' to={process.env.PUBLIC_URL + '/productos/tortas'}>Tortas</Link>
             </div>
             <ItemList productos = {productos}/>
         </div>

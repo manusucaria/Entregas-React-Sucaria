@@ -12,11 +12,11 @@ const NavBar = () => {
           </Link>
             <div className= "contenedor-lista">
                 <NavLink to={process.env.PUBLIC_URL + "/"} className= "listas">Inicio</NavLink>
-                <NavLink to={process.env.PUBLIC_URL + "/itemdetailcontainer"} className= "listas">Productos</NavLink>
-                <NavLink to={process.env.PUBLIC_URL + "/Cart"} className= "listas">Carrito</NavLink>
-                <NavLink to={process.env.PUBLIC_URL + "/Nosotros"} className= "listas">Sobre Nosotros</NavLink>
+                <NavLink to={process.env.PUBLIC_URL + "/productos"} className= "listas">Productos</NavLink>
+                <NavLink to={process.env.PUBLIC_URL + "/cart"} className= "listas">Carrito</NavLink>
+                <NavLink to={process.env.PUBLIC_URL + "/nosotros"} className= "listas">Sobre Nosotros</NavLink>
             </div>
-            <Link to={process.env.PUBLIC_URL + "/Cart"} className='contenedor-carrito'>
+            <Link to={process.env.PUBLIC_URL + "/cart"} className='contenedor-carrito'>
                 <CartWidget className= "carrito"/>
             </Link>
         </nav>

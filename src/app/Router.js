@@ -10,10 +10,12 @@ const Router = () => (
         <Routes>
             <Route element={<Layout />} path={process.env.PUBLIC_URL}>
                 <Route index element={<ItemListContainer />}/>
-                <Route path="itemdetailcontainer" element={<ItemDetailContainer />}/>
-                <Route path="Cart" element={<Cart />}/>
-                <Route path="Nosotros" element={<Nosotros />}/>
-                <Route path="item/:id" element={<ItemDetailContainer />}/>
+                <Route path="productos" element={<ItemListContainer />}/>
+                <Route path="productos/:idTipo" element={<ItemListContainer />}/>
+                <Route path="productos/item" element={<ItemDetailContainer />}/>
+                <Route path="productos/item/:idProducto" element={<ItemDetailContainer />}/>
+                <Route path="cart" element={<Cart />}/>
+                <Route path="nosotros" element={<Nosotros />}/>
             </Route>
         </Routes>
     </BrowserRouter>

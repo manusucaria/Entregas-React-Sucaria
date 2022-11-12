@@ -1,23 +1,20 @@
 import '../styles/ItemDetailContainer.css';
 import ItemDetail from '../componentes/ItemDetail';
-import { getProductos } from '../services/products';
+import { getProducto } from '../services/products';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
-    const {id} = useParams();
-    const [productos, setProductos] = useState([]);
+    const {idProducto} = useParams();
+    const [item, setItem] = useState({});
     useEffect(() => {
-        getProductos().then( data => {
-            setProductos(data)
+        getProducto(idProducto).then( data => {
+            setItem(data)
         })
-    }, []);
-    const buscarProducto = productos.find(producto => {
-        return producto.id === id;
-    })
+    }, [idProducto]);
     return (
         <div className= "contenedor-itemDetail">
-            {buscarProducto && <ItemDetail producto = {buscarProducto}/>}
+            <ItemDetail producto = {item}/>
         </div>
     )
 }
