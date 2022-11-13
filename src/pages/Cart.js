@@ -1,15 +1,12 @@
 import React from 'react'
+import CartItem from '../componentes/CartItem';
 import { useMyContext } from '../context/cartContext';
 import '../styles/Cart.css';
 
 const Cart = () => {
-    const [state, setState] = useMyContext();
-    const producto = {...state};
-    const eliminarProducto = () => {
-        setState()
-    }
+    const [state, setState] = useMyContext([]);
     const eliminarTodo = () => {
-        setState()
+        setState([])
     }
     return (
         <div className='body-carrito'>
@@ -21,15 +18,12 @@ const Cart = () => {
                     <th className='titulos-carrito-3'>Precio</th>
                     <th className='titulos-carrito-4'>Opciones</th>
                 </tr>
-                <tr className='filas-tabla'>
-                    <div className='listas-carrito-1'>
-                        <p className='nombre-item'>{producto.nombre}</p>
-                        {/* <img className='foto-producto' src={require(`../assets/img/productos/${producto.imagen}.jpg`)} alt="Foto de Producto" /> */}
-                    </div>
-                    <p className='listas-carrito-2'>{producto.cantidad}</p>
-                    <p className='listas-carrito-3'>${producto.precio}</p>
-                    <button onClick={eliminarProducto} className='boton-eliminar-producto'>Eliminar Producto</button>
-                </tr>
+                {state.map( (producto, i) =>
+                    <CartItem
+                        producto = {producto}
+                        key={i}
+                    />
+                )}
             </table>
             <button onClick={eliminarTodo} className='boton-eliminar'><p className='texto-eliminar'>Eliminar Todos los Productos</p></button>
         </div>

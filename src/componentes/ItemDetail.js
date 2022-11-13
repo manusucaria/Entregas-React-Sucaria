@@ -14,10 +14,22 @@ class Pedido{
     }
 };
 const ItemDetail = ({producto}) => {
-    const [state, setState] = useMyContext();
+    const [state, setState] = useMyContext([]);
     let comprado = () => {
-        const pedidoNuevo = new Pedido(producto.id, producto.tipo, producto.nombre, producto.imagen, producto.cantidad, producto.precio);
-        setState(pedidoNuevo)
+        const pedidoNuevo = new Pedido(producto.id, producto.tipo, producto.nombre, producto.imagen, 1, producto.precio);
+        const pedidos = state?state:[];
+        const duplicado = pedidos.find(producto => producto.id === pedidoNuevo.id);
+        duplicado?sumarCantidad():agregarProd();
+        function sumarCantidad () {
+            pedidos.splice(state.indexOf(duplicado), 1);
+            const prodFinal = new Pedido(producto.id, producto.tipo, producto.nombre, producto.imagen, pedidoNuevo.cantidad + duplicado.cantidad, producto.precio)
+            pedidos.push(prodFinal);
+        }
+        function agregarProd () {
+            pedidos.push(pedidoNuevo);
+            setState(pedidos);
+        }
+        console.log(state)
     }
     return (
         <div className='producto'>
