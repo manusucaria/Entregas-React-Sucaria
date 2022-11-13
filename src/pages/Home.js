@@ -5,8 +5,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-
-const ItemListContainer = () => {
+const Home = () => {
     const [productos, setProductos] = useState([]);
     const {idTipo} = useParams();
     useEffect(() => {
@@ -16,7 +15,7 @@ const ItemListContainer = () => {
     }, [idTipo]);
     return (
         <div className= "contenedor-itemlist">
-            <h1 className='titulo'>Conocé Nuestros Productos</h1>
+            <h1 className='titulo'>Bienvenidos</h1>
             <div className='categorias'>
                 <Link className='listas-categorias' to={process.env.PUBLIC_URL + '/productos/budines'}>Budines</Link>
                 <Link className='listas-categorias' to={process.env.PUBLIC_URL + '/productos/tortas'}>Tortas</Link>
@@ -29,5 +28,4 @@ const ItemListContainer = () => {
     )
 }
 
-export default ItemListContainer;
-
+export default Home
