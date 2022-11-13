@@ -42,7 +42,7 @@ const Home = () => {
                     <img className='imagen-4' src={fotoPortada4} alt="Foto Portada 4" />
                     <div className='textos'>
                         <h2 className='titulo-hero'>Dulce Capricho</h2>
-                        <p className='parrafo-hero'>Somos una Empresa con mas de 20 años de experiencia en la elaboración de los mas finos productos de pasteleria artesanal. Ubicados en el barrio de Belgrano, contamos con una variedades de productos de la mas alta calidad.</p>
+                        <p className='parrafo-hero'>Somos una Empresa con mas de 20 años de experiencia en la elaboración de los mas finos productos de pasteleria artesanal. Ubicados en el barrio de Belgrano, contamos con una amplia gama de variedades de productos de la mas alta calidad.</p>
                     </div>
                 </div>
             </div>

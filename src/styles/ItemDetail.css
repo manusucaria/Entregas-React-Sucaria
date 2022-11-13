@@ -94,7 +94,7 @@
 }
 
 .producto {
-    margin: 3rem 0 0 2rem;
+    margin: 3rem auto 0 auto;
     display: flex;
     width: 40vw;
     justify-content: center;

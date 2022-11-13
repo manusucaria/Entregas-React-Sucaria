@@ -12,7 +12,7 @@ const Cart = () => {
         setState()
     }
     return (
-        <div>
+        <div className='body-carrito'>
             <h2 className='titulo-carrito'>Carrito</h2>
             <table className='contenedor-prod-carrito'>
                 <tr className='filas-tabla'>

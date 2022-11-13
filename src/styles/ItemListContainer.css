@@ -2,12 +2,15 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 2rem;
 }
-.titulo{
-    margin: 3rem auto;
-    margin-bottom: 5rem;
-    font-size: 5rem;
+.titulo-productos{
+    margin: 0;
+    height: 100%;
+    background-color: #f69e51;
+    padding-top: 3rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 4rem;
     font-weight: 600;
 }
 .categorias{

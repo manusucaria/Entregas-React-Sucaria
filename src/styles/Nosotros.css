@@ -1,0 +1,13 @@
+.body-nosotros{
+    min-height: 70vh;
+}
+.titulo-nosotros{
+    margin: 0;
+    height: 100%;
+    background-color: #f69e51;
+    padding-top: 3rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    font-weight: 600;
+}
