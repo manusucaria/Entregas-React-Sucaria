@@ -5,9 +5,9 @@ import CartContext from './context/cartContext';
 function App() {
   return (
     <div className="App">
-    <CartContext>
-      <Router />
-    </CartContext>
+      <CartContext>
+        <Router />
+      </CartContext>
     </div>
   );
 }

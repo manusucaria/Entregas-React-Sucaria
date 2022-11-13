@@ -6,7 +6,8 @@
 }
 .titulo{
     margin: 3rem auto;
-    font-size: 4rem;
+    margin-bottom: 5rem;
+    font-size: 5rem;
     font-weight: 600;
 }
 .categorias{
