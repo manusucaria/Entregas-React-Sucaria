@@ -3,11 +3,14 @@ import '../styles/Cart.css';
 
 const CartItem = ({producto}) => {
     const [state, setState] = useMyContext([]);
-    console.log(producto)
     const eliminarProducto = () => {
-        const eliminado = state.find(item => item.id === producto.id);
-        const pedidos = state?state.splice(state.indexOf(eliminado), 1):[];
-        setState(state.splice(state.indexOf(pedidos), 1))
+        const eliminado = state.find(item => Number(item.id) === Number(producto.id));
+        state.splice(state.indexOf(eliminado), 1);
+        if(state.length === 0){
+            setState([])
+        }else{
+            setState(state)
+        }
     }
     return (
         <div>

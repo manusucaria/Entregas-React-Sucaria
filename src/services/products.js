@@ -68,6 +68,13 @@ const products = [
         nombre: "Muffin con Chips",
         imagen: "muffin",
         precio: 450
+    },
+    {
+        id: 11,
+        tipo: "muffins",
+        nombre: "Muffin de Chocolate",
+        imagen: "muffinchocolate",
+        precio: 450
     }
 ]
 export const getProducto = (idProducto) => {

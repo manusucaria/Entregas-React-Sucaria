@@ -24,21 +24,21 @@ const ItemDetail = ({producto}) => {
             pedidos.splice(state.indexOf(duplicado), 1);
             const prodFinal = new Pedido(producto.id, producto.tipo, producto.nombre, producto.imagen, pedidoNuevo.cantidad + duplicado.cantidad, producto.precio)
             pedidos.push(prodFinal);
+            setState(pedidos)
         }
         function agregarProd () {
             pedidos.push(pedidoNuevo);
             setState(pedidos);
         }
-        console.log(state)
     }
     return (
-        <div className='producto'>
-            <div className='datos-producto'>
-                {/* <img className='imagen-producto' src={require(`../assets/img/productos/${producto.imagen}.jpg`)} alt="Foto de Producto" /> */}
-                <p className='nombre-producto'>{producto.nombre}</p>
-                <p className='precio-producto'>${producto.precio}</p>
+        <div className='producto-detail'>
+            <div className='datos-producto-detail'>
+                {/* <img className='imagen-producto-detail' src={require(`../assets/img/productos/${producto.imagen}.jpg`)} alt="Foto de Producto" /> */}
+                <p className='nombre-producto-detail'>{producto.nombre}</p>
+                <p className='precio-producto-detail'>${producto.precio}</p>
                 <ItemCount />
-                <button onClick={comprado} className='boton-agregar'>Agregar al Carrito</button>
+                <button onClick={comprado} className='boton-agregar-detail'>Agregar al Carrito</button>
             </div>
         </div>
     )

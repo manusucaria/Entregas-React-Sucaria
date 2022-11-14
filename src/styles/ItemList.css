@@ -1,6 +1,6 @@
 .contenedor-signos {
-    margin: 3rem auto 1.5rem auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;

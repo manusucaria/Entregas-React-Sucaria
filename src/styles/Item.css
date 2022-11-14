@@ -14,7 +14,6 @@
     border: 1px solid white;
     background-color: #D98B48;
     cursor: pointer;
-    margin-bottom: 3rem;
     margin-top: 1rem;
     text-decoration: none;
 }
@@ -24,6 +23,7 @@
     background-color: #f69e51;
 }
 .producto{
+    margin: auto;
     display: flex;
     width: 40vw;
     flex-direction: column;

@@ -5,7 +5,7 @@
     gap: 3rem;
     align-items: center;
 }
-.boton-agregar {
+.boton-agregar-detail {
     color: black;
     text-align: center;
     font-size: 2.5rem;
@@ -20,8 +20,7 @@
     margin-top: 1rem;
     text-decoration: none;
 }
-
-.boton-agregar:hover {
+.boton-agregar-detail:hover {
     color: black;
     transition: all .5s ease;
     background-color: #f69e51;
@@ -31,12 +30,10 @@
     align-items: center;
     margin: 0;
 }
-
 .numero-cantidades {
     font-size: 3rem;
     margin: auto;
 }
-
 .signo-menos {
     cursor: pointer;
     font-weight: 800;
@@ -48,12 +45,10 @@
     margin-right: 2rem;
     text-align: center;
 }
-
 .signo-menos:hover {
     transition: all .3s ease;
     background-color: #89D9D9;
 }
-
 .signo-mas {
     cursor: pointer;
     font-weight: 800;
@@ -65,12 +60,10 @@
     margin-left: 2rem;
     text-align: center;
 }
-
 .signo-mas:hover {
     transition: all .3s ease;
     background-color: #89D9D9;
 }
-
 .boton-detalles {
     color: black;
     text-align: center;
@@ -86,30 +79,26 @@
     margin-top: 1rem;
     text-decoration: none;
 }
-
 .boton-detalles:hover {
     color: black;
     transition: all .5s ease;
     background-color: #f69e51;
 }
-
-.producto {
-    margin: 3rem auto 0 auto;
+.producto-detail {
+    margin: auto;
     display: flex;
-    width: 40vw;
+    width: 50vw;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-top: 4rem;
 }
-
-.datos-producto {
+.datos-producto-detail {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-.imagen-producto {
+.imagen-producto-detail {
     cursor: pointer;
     margin: auto;
     object-fit: cover;
@@ -117,20 +106,17 @@
     height: 100%;
     margin-bottom: .6rem;
 }
-
-.imagen-producto:hover {
+.imagen-producto-detail:hover {
     transition: transform .6s ease;
     transform: scale(1.01);
 }
-
-.nombre-producto {
+.nombre-producto-detail {
     font-size: 3rem;
     font-weight: 500;
     margin: auto;
     text-align: center;
 }
-
-.precio-producto {
+.precio-producto-detail {
     font-size: 2rem;
     font-weight: 300;
     margin: auto;
