@@ -4,6 +4,15 @@
   min-height: 100vh;
   overflow-x: hidden;
   background-color: #ede0dd;
+  font-family: 'Bake';
+}
+@font-face {
+  font-family: 'Bake';
+  src: local('Bake'), url(./assets/fonts/Let\'s\ Bake\ Muffins\ -\ OTF.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Brownie';
+  src: local('Brownie'), url(./assets/fonts/BrownieCake.otf) format('opentype')
 }
 
 

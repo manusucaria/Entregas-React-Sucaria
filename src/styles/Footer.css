@@ -16,7 +16,7 @@
 }
 .lista-footer{
     cursor: pointer;
-    font-size: 2.3rem;
+    font-size: 3rem;
     margin: auto 2.5rem;
 }
 .lista-footer:hover{
@@ -26,7 +26,7 @@
 }
 .copyright{
     display: flex;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .foto-copyright{
     height: 1.8rem;

@@ -58,7 +58,7 @@ const Home = () => {
             </div>
             <ItemList productos = {productos}/>
             <div className='contenedor-iframe'>
-                <h3 className='titulo-iframe'>Encontranos</h3>
+                <h3 className='titulo-iframe'>Encontrános</h3>
                 <Iframe className="iframe" iframe={iframe} />,
             </div>
         </div>

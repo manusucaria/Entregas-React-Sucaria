@@ -6,7 +6,7 @@
 .boton-detalles {
     color: black;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.3rem;
     font-weight: 400;
     width: 100%;
     padding: 1rem;
@@ -48,7 +48,7 @@
     transform: scale(1.01);
 }
 .nombre-producto{
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 500;
     margin: auto;
 }

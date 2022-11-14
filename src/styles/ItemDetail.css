@@ -8,7 +8,7 @@
 .boton-agregar-detail {
     color: black;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 400;
     width: 100%;
     padding: 1rem;
@@ -56,7 +56,7 @@
     height: 4rem;
     width: 4rem;
     border: 1px solid black;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-left: 2rem;
     text-align: center;
 }
@@ -67,7 +67,7 @@
 .boton-detalles {
     color: black;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 400;
     width: 100%;
     padding: 1rem;
@@ -111,13 +111,13 @@
     transform: scale(1.01);
 }
 .nombre-producto-detail {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 500;
     margin: auto;
     text-align: center;
 }
 .precio-producto-detail {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 300;
     margin: auto;
 }
