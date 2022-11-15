@@ -1,8 +1,30 @@
+@keyframes fadein{
+    0% {
+            opacity: 1;
+            z-index: 100;
+        }
+    100% {
+            opacity: 0;
+            z-index: -1;
+        }
+}
 .contenedor-hero{
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
+}
+.video-inicio{
+    animation-name: fadein;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    opacity: 0;
+    position: fixed;
+    object-fit: cover;
+    touch-action: 0;
+    width: 100vw;
+    min-height: 100vh;
+    z-index: -1;
 }
 .titulo-home {
     margin: 0;
@@ -18,7 +40,7 @@
     margin-bottom: 0;
     border-bottom: 1px white solid;
     display: grid;
-    height: 70vh;
+    height: 75vh;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }

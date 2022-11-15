@@ -1,13 +1,14 @@
 import "../styles/Footer.css";
-import copyright from "../assets/img/copyright.ico"
+import copyright from "../assets/img/copyright.ico";
+import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div className="footer">
             <div className="listas-footer">
-                <p className="lista-footer">Productos</p>
-                <p className="lista-footer">Nosotros</p>
-                <p className="lista-footer">Carrito</p>
-                <p className="lista-footer">Contacto</p>
+                <Link to={process.env.PUBLIC_URL + "/"} className= "lista-footer">Inicio</Link>
+                <Link to={process.env.PUBLIC_URL + "/productos"} className= "lista-footer">Productos</Link>
+                <Link to={process.env.PUBLIC_URL + "/cart"} className= "lista-footer">Carrito</Link>
+                <Link to={process.env.PUBLIC_URL + "/nosotros"} className= "lista-footer">Nosotros</Link>
             </div>
             <p className="copyright">DULCE CAPRICHO 2022 <img className="foto-copyright" src={copyright} alt="Copyright" /></p>
         </div>

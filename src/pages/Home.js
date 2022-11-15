@@ -9,6 +9,7 @@ import fotoPortada2 from '../assets/img/portada/portada2.jpg';
 import fotoPortada3 from '../assets/img/portada/portada3.jpg';
 import fotoPortada4 from '../assets/img/portada/portada4.jpg';
 import fondoHero from '../assets/img/portada/hero.jpg';
+import video from '../assets/video/inicio.mp4';
 
 const Home = () => {
     const iframe = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.6073495448654!2d-58.461680084175725!3d-34.56349576287922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d44ef9dccd%3A0xe5491728baf96b83!2sMoldes%202101-2199%2C%20C1428CRG%20CABA!5e0!3m2!1ses-419!2sar!4v1668438267261!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
@@ -22,8 +23,12 @@ const Home = () => {
             setProductos(data)
         })
     }, [idTipo]);
+    let videoInicio = <video className='video-inicio' loop autoPlay muted>
+                        <source src={video} type="video/mp4" />
+                    </video>;
     return (
         <div>
+            {videoInicio}
             <div className='contenedor-hero'>
                 <h1 className='titulo-home'>Bienvenidos</h1>
                 <div className='hero'>

@@ -15,8 +15,10 @@
     margin-top: 1rem;
 }
 .lista-footer{
+    text-decoration: none;
+    color: black;
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 3.3rem;
     margin: auto 2.5rem;
 }
 .lista-footer:hover{
