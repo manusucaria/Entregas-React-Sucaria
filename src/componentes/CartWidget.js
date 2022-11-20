@@ -8,7 +8,11 @@ const CartWidget = () => {
     return (
         <div className= "contenedor-carrito">
             <img className= "foto-carrito" src={fotoCarrito} alt="Foto de Carrito" />
+            {state.length !== 0 ?
             <p className= "numero-carrito">{state.length}</p>
+            : <p></p>
+            }
+
         </div>
     )
 }

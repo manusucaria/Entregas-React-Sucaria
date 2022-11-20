@@ -1,4 +1,5 @@
 .contenedor-carrito {
+    margin-right: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +15,7 @@
 }
 .numero-carrito {
     font-size: 2.5rem;
-    margin-right: 2rem;
+    padding-left: 1rem;
     color: black;
     text-decoration: none;
 }

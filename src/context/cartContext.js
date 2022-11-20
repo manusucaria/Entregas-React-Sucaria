@@ -38,11 +38,8 @@ const notifyEliminarTodo = () => toast.error('Carrito Vacío!', {
 });
 const CartContext = ({ children }) =>{
     const [state,setState] = useState([]);
-    let [estadoBoton, setEstadoBoton] = useState(0)
-
     const addToCart = (producto) => {
         notifyAgregarProducto();
-        setEstadoBoton(1);
         const duplicado = state.find(prod => prod.id === producto.id);
         duplicado?sumarCantidad():agregarProd();
         function sumarCantidad () {
@@ -57,7 +54,6 @@ const CartContext = ({ children }) =>{
     };
     const eliminarTodo = () => {
         notifyEliminarTodo();
-        setEstadoBoton(0);
         if(state.length >= 1){
             setState([])
         }else{
@@ -65,12 +61,11 @@ const CartContext = ({ children }) =>{
         }
     };
     const eliminarProducto = (producto) => {
-        setEstadoBoton(0);
         notifyEliminarProducto();
         setState(state.filter(p => p.id !== producto.id))
     };
     return (
-        <AppContext.Provider value={{state, setState, addToCart, eliminarTodo, eliminarProducto, estadoBoton}}>
+        <AppContext.Provider value={{state, setState, addToCart, eliminarTodo, eliminarProducto}}>
             {children}
         </AppContext.Provider>
     );

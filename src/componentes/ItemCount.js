@@ -4,7 +4,6 @@ import '../styles/ItemDetail.css';
 import { useMyContext } from '../context/cartContext';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Link } from 'react-router-dom';
 
 const ItemCount = ({producto}) => {
     let [contador, setContador] = useState(1);
@@ -15,22 +14,17 @@ const ItemCount = ({producto}) => {
 	let resta = () => {
         setContador(contador <= 1 ? contador : prev => prev - 1)
 	}
-    const {addToCart, estadoBoton} = useMyContext([]);
+    const {addToCart} = useMyContext([]);
     return (
         <div>
-            {
-                estadoBoton === 0
-                ?
-                <div>
-                    <div className='cantidades'>
-                        <p onClick={resta} className= "signo-menos">-</p>
-                        <p className= "numero-cantidades">{contador}</p>
-                        <p onClick={suma} className= "signo-mas">+</p>
-                    </div>
-                    <button onClick={() => addToCart(producto)} className='boton-agregar-detail'>Agregar al Carrito</button>
+            <div>
+                <div className='cantidades'>
+                    <p onClick={resta} className= "signo-menos">-</p>
+                    <p className= "numero-cantidades">{contador}</p>
+                    <p onClick={suma} className= "signo-mas">+</p>
                 </div>
-                :<Link to={process.env.PUBLIC_URL + "/cart"} className= "terminarCompra">Terminar Compra</Link>
-            }
+                <button onClick={() => addToCart(producto)} className='boton-agregar-detail'>Agregar al Carrito</button>
+            </div>
             <ToastContainer />
         </div>
     )
