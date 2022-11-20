@@ -14,7 +14,28 @@
 .contenedor-prod-carrito{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-bottom: 2rem;
+}
+.carritoVacio {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #D98B48;
+    width: 67rem;
+    border-radius: .5rem;
+    font-size: 3.5rem;
+    margin: 2rem auto 0 auto;
+    padding: .5rem 1rem;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+.carritoVacio:hover {
+    transition: all .5s ease;
+    background-color: #f69e51;
+    color: black;
 }
 .nombre-item{
     grid-column: 1/5;
@@ -126,6 +147,18 @@
     border-top: black 2px solid;
     border-right: black 2px solid;
     border-bottom: black 1px solid;
+}
+.contenedorCierre{
+    display: flex;
+    justify-content: center;
+}
+.total{
+    display: flex;
+    margin: auto;
+    width: auto;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 1rem;
 }
 .boton-eliminar{
     display: flex;

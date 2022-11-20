@@ -4,10 +4,11 @@ import { useMyContext } from '../context/cartContext';
 import '../styles/Cart.css';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
     const {state, eliminarTodo} = useMyContext([]);
-
+    const total = state.map(item => item.precio*item.cantidad).reduce((prev, curr) => prev + curr, 0);
     return (
         <div className='body-carrito'>
             <h2 className='titulo-carrito'>Carrito</h2>
@@ -20,16 +21,25 @@ const Cart = () => {
                         <th className='titulos-carrito-4'>Opciones</th>
                     </tr>
                 </thead>
-                <tbody>
-                    {state.map( (producto, i) =>
-                        <CartItem
-                            producto = {producto}
-                            key={i}
-                        />
-                    )}
-                </tbody>
+                {
+                    state.length !== 0?
+                    <div>
+                        <tbody>
+                            {state.map( (producto) =>
+                                <CartItem
+                                    producto = {producto}
+                                    key={producto.id}
+                                />
+                            )}
+                        </tbody>
+                        <div className='contenedorCierre'>
+                            <button onClick={() => eliminarTodo()} className='boton-eliminar'><p className='texto-eliminar'>Eliminar Todos los Productos</p></button>
+                            <p className='total'>Valor Total: ${total}</p>
+                        </div>
+                    </div>
+                    : <Link to={process.env.PUBLIC_URL + "/productos"} className= "carritoVacio">Volver a Productos</Link>
+                }
             </table>
-            <button onClick={() => eliminarTodo()} className='boton-eliminar'><p className='texto-eliminar'>Eliminar Todos los Productos</p></button>
             <ToastContainer />
         </div>
         )

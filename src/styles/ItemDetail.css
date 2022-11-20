@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
-    background-color: #f69e51;
+    background-color: #D98B48;
     width: 67rem;
     border-radius: .5rem;
     font-size: 3.5rem;
@@ -23,6 +23,7 @@
 }
 .terminarCompra:hover {
     transition: all .5s ease;
+    background-color: #f69e51;
     color: black;
 }
 .boton-agregar-detail {

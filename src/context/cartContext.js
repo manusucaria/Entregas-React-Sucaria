@@ -54,11 +54,7 @@ const CartContext = ({ children }) =>{
     };
     const eliminarTodo = () => {
         notifyEliminarTodo();
-        if(state.length >= 1){
-            setState([])
-        }else{
-            return
-        }
+        setState([])
     };
     const eliminarProducto = (producto) => {
         notifyEliminarProducto();

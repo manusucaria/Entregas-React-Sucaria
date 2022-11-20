@@ -17,14 +17,12 @@ const ItemCount = ({producto}) => {
     const {addToCart} = useMyContext([]);
     return (
         <div>
-            <div>
-                <div className='cantidades'>
-                    <p onClick={resta} className= "signo-menos">-</p>
-                    <p className= "numero-cantidades">{contador}</p>
-                    <p onClick={suma} className= "signo-mas">+</p>
-                </div>
-                <button onClick={() => addToCart(producto)} className='boton-agregar-detail'>Agregar al Carrito</button>
+            <div className='cantidades'>
+                <p onClick={resta} className= "signo-menos">-</p>
+                <p className= "numero-cantidades">{contador}</p>
+                <p onClick={suma} className= "signo-mas">+</p>
             </div>
+            <button onClick={() => addToCart(producto)} className='boton-agregar-detail'>Agregar al Carrito</button>
             <ToastContainer />
         </div>
     )
