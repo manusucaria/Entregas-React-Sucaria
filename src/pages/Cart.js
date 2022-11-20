@@ -2,12 +2,12 @@ import React from 'react'
 import CartItem from '../componentes/CartItem';
 import { useMyContext } from '../context/cartContext';
 import '../styles/Cart.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = () => {
-    const [state, setState] = useMyContext([]);
-    const eliminarTodo = () => {
-        setState([])
-    }
+    const {state, eliminarTodo} = useMyContext([]);
+
     return (
         <div className='body-carrito'>
             <h2 className='titulo-carrito'>Carrito</h2>
@@ -25,7 +25,8 @@ const Cart = () => {
                     />
                 )}
             </table>
-            <button onClick={eliminarTodo} className='boton-eliminar'><p className='texto-eliminar'>Eliminar Todos los Productos</p></button>
+            <button onClick={() => eliminarTodo()} className='boton-eliminar'><p className='texto-eliminar'>Eliminar Todos los Productos</p></button>
+            <ToastContainer />
         </div>
         )
 }

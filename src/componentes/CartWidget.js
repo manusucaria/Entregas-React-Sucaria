@@ -4,7 +4,7 @@ import fotoCarrito from '../assets/img/carrito.png';
 import { useMyContext } from '../context/cartContext';
 
 const CartWidget = () => {
-    const [state, setState] = useMyContext();
+    const {state} = useMyContext([]);
     return (
         <div className= "contenedor-carrito">
             <img className= "foto-carrito" src={fotoCarrito} alt="Foto de Carrito" />
