@@ -37,3 +37,81 @@
     z-index: 2;
     font-size: 3.5rem;
 }
+
+/*CEL*/
+@media screen and (max-width: 361px) {
+    .titulo-nosotros {
+        padding-top: .7rem;
+        padding-bottom: .7rem;
+        font-size: 2.4rem;
+    }
+    .texto-vid {
+        padding: 1rem;
+        font-size: 2.7rem;
+    }
+}
+
+/*SMART*/
+@media screen and (max-width: 450px) and (min-width: 361px) {
+    .titulo-nosotros {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 2.5rem;
+    }
+    .texto-vid {
+        padding: 1.3rem;
+        font-size: 2.8rem;
+    }
+}
+
+/*TABLET*/
+@media screen and (max-width: 687px) and (min-width: 450px) {
+    .titulo-nosotros {
+        padding-top: 1.7rem;
+        padding-bottom: 1.7rem;
+        font-size: 3.3rem;
+    }
+    .texto-vid {
+        padding: 1.6rem;
+        font-size: 2.8rem;
+    }
+}
+
+/*TABLET XL*/
+@media screen and (min-width: 687px) and (max-width: 900px) {
+    .titulo-nosotros {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        font-size: 3.7rem;
+    }
+    .texto-vid {
+        padding: 1.7rem;
+        font-size: 2.9rem;
+    }
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 900px) and (max-width: 1110px) {
+    .titulo-nosotros {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        font-size: 4.3rem;
+    }
+    .texto-vid {
+        padding: 1.9rem;
+        font-size: 3.1rem;
+    }
+}
+
+/* WIDE */
+@media screen and (min-width: 1110px) and (max-width: 1350px) {
+    .titulo-nosotros {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        font-size: 4.3rem;
+    }
+    .texto-vid {
+        padding: 2rem;
+        font-size: 3.3rem;
+    }
+}

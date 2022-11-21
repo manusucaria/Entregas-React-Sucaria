@@ -47,3 +47,130 @@
     margin-left: auto;
     margin-right: 20rem;
 }
+
+/*CEL*/
+@media screen and (max-width: 361px) {
+    .foto-portada {
+        cursor: pointer;
+        margin: .5rem 0 .5rem .7rem;
+        border-radius: 50%;
+        object-fit: cover;
+        height: 4rem;
+        width: 4rem;
+    }
+    .listas {
+        cursor: pointer;
+        border-radius: .5rem;
+        font-size: 1.6rem;
+        margin: auto .2rem;
+        padding: .1rem .3rem;
+        list-style: none;
+        color: black;
+        text-decoration: none;
+    }
+}
+/*SMART*/
+@media screen and (max-width: 450px) and (min-width: 361px) {
+    .foto-portada {
+        cursor: pointer;
+        margin: .3rem 0 .3rem .3rem;
+        border-radius: 50%;
+        object-fit: cover;
+        height: 5rem;
+        width: 5rem;
+    }
+    .listas {
+        cursor: pointer;
+        border-radius: .5rem;
+        font-size: 1.9rem;
+        margin: auto .2rem;
+        padding: .3rem .5rem;
+        list-style: none;
+        color: black;
+        text-decoration: none;
+    }
+}
+/*TABLET*/
+@media screen and (max-width: 687px) and (min-width: 450px) {
+    .foto-portada {
+        cursor: pointer;
+        margin: .7rem 0 .7rem 1rem;
+        border-radius: 50%;
+        object-fit: cover;
+        height: 8rem;
+        width: 8rem;
+    }
+    .listas {
+        cursor: pointer;
+        border-radius: .5rem;
+        font-size: 2.1rem;
+        margin: auto .5rem;
+        padding: .3rem .5rem;
+        list-style: none;
+        color: black;
+        text-decoration: none;
+    }
+}
+/*TABLET XL*/
+@media screen and (min-width: 687px) and (max-width: 900px) {
+    .foto-portada {
+        cursor: pointer;
+        margin: .7rem 0 .7rem 1rem;
+        border-radius: 50%;
+        object-fit: cover;
+        height: 12rem;
+        width: 12rem;
+    }
+    .listas {
+        cursor: pointer;
+        border-radius: .5rem;
+        font-size: 2.9rem;
+        margin: auto 1.2rem;
+        padding: .4rem .7rem;
+        list-style: none;
+        color: black;
+        text-decoration: none;
+    }
+}
+/*DESKTOP*/
+@media screen and (min-width: 900px) and (max-width: 1110px) {
+    .foto-portada {
+        cursor: pointer;
+        margin: .7rem 0 .7rem 1rem;
+        border-radius: 50%;
+        object-fit: cover;
+        height: 14rem;
+        width: 14rem;
+    }
+    .listas {
+        cursor: pointer;
+        border-radius: .5rem;
+        font-size: 3.3rem;
+        margin: auto 2rem;
+        padding: .5rem 1rem;
+        list-style: none;
+        color: black;
+        text-decoration: none;
+    }
+}
+/* WIDE */
+@media screen and (min-width: 1110px) and (max-width: 1350px) {
+    .foto-portada {
+        cursor: pointer;
+        margin: .7rem 0 .7rem 1rem;
+        border-radius: 50%;
+        object-fit: cover;
+        height: 15rem;
+        width: 15rem;
+    }
+    .listas {
+        cursor: pointer;
+        border-radius: .5rem;
+        font-size: 3.4rem;
+        margin: auto 2rem;
+        padding: .5rem 1rem;
+        list-style: none;
+        color: black;
+        text-decoration: none;
+    }
+}

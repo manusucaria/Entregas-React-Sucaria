@@ -29,9 +29,9 @@ export const getProductsByCategory = async (IdTipo) => {
     return getArrayFromCollection(result);
 }
 
-export const getProductsById = async (id) => {
+export const getProductById = async (idProducto) => {
     const colRef = collection(db, 'productos');
-    const result = await getDoc(doc(colRef, id));
+    const result = await getDoc(doc(colRef, idProducto));
     return result.data();
 }
 

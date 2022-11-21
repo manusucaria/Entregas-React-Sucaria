@@ -7,7 +7,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const ItemCount = ({producto}) => {
     let [contador, setContador] = useState(1);
-    producto.cantidad = contador;
     let suma = () => {
         setContador(contador >= 10 ? contador : prev => prev + 1)
 	}
@@ -22,7 +21,7 @@ const ItemCount = ({producto}) => {
                 <p className= "numero-cantidades">{contador}</p>
                 <p onClick={suma} className= "signo-mas">+</p>
             </div>
-            <button onClick={() => addToCart(producto)} className='boton-agregar-detail'>Agregar al Carrito</button>
+            <button onClick={() => addToCart(producto, contador)} className='boton-agregar-detail'>Agregar al Carrito</button>
             <ToastContainer />
         </div>
     )

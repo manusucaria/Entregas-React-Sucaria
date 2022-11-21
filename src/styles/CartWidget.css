@@ -14,8 +14,93 @@
     transition: transform 1s ease;
 }
 .numero-carrito {
+    margin: auto;
     font-size: 2.5rem;
     padding-left: 1rem;
     color: black;
     text-decoration: none;
+}
+
+/*CEL*/
+@media screen and (max-width: 361px) {
+    .contenedor-carrito {
+        margin-right: .7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .foto-carrito {
+        cursor: pointer;
+        height: 2rem;
+        width: 2rem;
+    }
+    .numero-carrito {
+        font-size: 1rem;
+        padding-left: .5rem;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+/*SMART*/
+@media screen and (max-width: 450px) and (min-width: 361px) {
+    .contenedor-carrito {
+        margin-right: .3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .foto-carrito {
+        cursor: pointer;
+        height: 3rem;
+        width: 3rem;
+    }
+    .numero-carrito {
+        font-size: 1.2rem;
+        padding-left: .5rem;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+/*TABLET*/
+@media screen and (max-width: 687px) and (min-width: 450px) {
+    .contenedor-carrito {
+        margin-right: .8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .foto-carrito {
+        cursor: pointer;
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+    .numero-carrito {
+        font-size: 1.5rem;
+        padding-left: .5rem;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+/*TABLET XL*/
+@media screen and (min-width: 687px) and (max-width: 900px) {
+    .contenedor-carrito {
+        margin-right: .9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .foto-carrito {
+        cursor: pointer;
+        height: 4rem;
+        width: 4rem;
+    }
+    .numero-carrito {
+        font-size: 1.7rem;
+        padding-left: .5rem;
+        color: black;
+        text-decoration: none;
+    }
 }

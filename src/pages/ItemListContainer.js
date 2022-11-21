@@ -1,16 +1,19 @@
 import '../styles/ItemListContainer.css';
 import ItemList from '../componentes/ItemList';
-import { getProductos } from '../services/products';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { getProductsByCategory, getProducts } from '../app/api';
 
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([]);
     const {idTipo} = useParams();
     useEffect(() => {
-        getProductos(idTipo).then(data => {
+        idTipo ? getProductsByCategory(idTipo).then(data => {
+            setProductos(data)
+        })
+        : getProducts().then(data => {
             setProductos(data)
         })
     }, [idTipo]);

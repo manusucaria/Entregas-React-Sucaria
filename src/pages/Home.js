@@ -1,8 +1,8 @@
 import ItemList from '../componentes/ItemList';
-import { getProductos } from '../services/products';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { getProducts } from '../app/api';
 import '../styles/Home.css';
 import fotoPortada1 from '../assets/img/portada/portada1.jpg';
 import fotoPortada2 from '../assets/img/portada/portada2.jpg';
@@ -19,7 +19,7 @@ const Home = () => {
     const [productos, setProductos] = useState([]);
     const {idTipo} = useParams();
     useEffect(() => {
-        getProductos(idTipo).then(data => {
+        getProducts().then(data => {
             setProductos(data)
         })
     }, [idTipo]);

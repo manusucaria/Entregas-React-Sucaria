@@ -10,7 +10,7 @@
     padding-top: 3rem;
     text-align: center;
     padding-bottom: 3rem;
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 600;
 }
 .categorias{
@@ -31,4 +31,100 @@
     color: #D98B48;
     transform: translateX(.5px);
     transition: all .5s ease;
+}
+
+/*CEL*/
+@media screen and (max-width: 361px) {
+    .titulo-productos {
+        padding-top: .7rem;
+        padding-bottom: .7rem;
+        font-size: 2.4rem;
+    }
+    .categorias {
+        gap: 1rem;
+        margin-bottom: 2.3rem;
+    }
+    .listas-categorias {
+        font-size: 2.1rem;
+    }
+}
+
+/*SMART*/
+@media screen and (max-width: 450px) and (min-width: 361px) {
+    .titulo-productos {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 2.5rem;
+    }
+    .categorias {
+        gap: 2.5rem;
+        margin-bottom: 2.7rem;
+    }
+    .listas-categorias {
+        font-size: 2.3rem;
+    }
+}
+
+/*TABLET*/
+@media screen and (max-width: 687px) and (min-width: 450px) {
+    .titulo-productos {
+        padding-top: 1.7rem;
+        padding-bottom: 1.7rem;
+        font-size: 3.3rem;
+    }
+    .categorias {
+        gap: 3rem;
+        margin-bottom: 3rem;
+    }
+    .listas-categorias {
+        font-size: 2.7rem;
+    }
+}
+
+/*TABLET XL*/
+@media screen and (min-width: 687px) and (max-width: 900px) {
+    .titulo-productos {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        font-size: 3.7rem;
+    }
+    .categorias {
+        gap: 3.7rem;
+        margin-bottom: 3.7rem;
+    }
+    .listas-categorias {
+        font-size: 3.1rem;
+    }
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 900px) and (max-width: 1110px) {
+    .titulo-productos {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        font-size: 4.3rem;
+    }
+    .categorias {
+        gap: 3.7rem;
+        margin-bottom: 3.7rem;
+    }
+    .listas-categorias {
+        font-size: 3.1rem;
+    }
+}
+
+/* WIDE */
+@media screen and (min-width: 1110px) and (max-width: 1350px) {
+    .titulo-productos {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        font-size: 4.3rem;
+    }
+    .categorias {
+        gap: 3.7rem;
+        margin-bottom: 3.7rem;
+    }
+    .listas-categorias {
+        font-size: 3.1rem;
+    }
 }

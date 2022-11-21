@@ -12,7 +12,7 @@
     justify-content: center;
     cursor: pointer;
     background-color: #D98B48;
-    width: 67rem;
+    width: 67vw;
     border-radius: .5rem;
     font-size: 3.5rem;
     margin: auto 2rem;
@@ -31,7 +31,7 @@
     text-align: center;
     font-size: 3rem;
     font-weight: 400;
-    width: 67rem;
+    width: 67vw;
     padding: 1rem;
     border-radius: 1rem;
     border: 1px solid white;
@@ -141,4 +141,224 @@
     font-size: 3rem;
     font-weight: 300;
     margin: auto;
+}
+
+/*CEL*/
+@media screen and (max-width: 361px) {
+    .cantidades {
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        width: 20rem;
+        gap: 1.7rem;
+    }
+    .terminarCompra {
+        width: 75vw;
+        font-size: 2.5rem;
+        margin: auto 1rem;
+        padding: .7rem;
+    }
+    .boton-agregar-detail {
+        font-size: 2.5rem;
+        width: 75vw;
+        padding: 1rem;
+        margin-bottom: 3rem;
+        margin-top: .7rem;
+    }
+    .numero-cantidades {
+        font-size: 2.3rem;
+    }
+    .signo-menos {
+        height: 3.4rem;
+        width: 3.4rem;
+        font-size: 2.3rem;
+        margin-right: 2rem;
+    }
+    .signo-mas {
+        height: 3.4rem;
+        width: 3.4rem;
+        font-size: 2.3rem;
+        margin-left: 2rem;
+    }
+    .boton-detalles {
+        font-size: 2.4rem;
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+    .producto-detail {
+        width: 50vw;
+        margin-top: 2.7rem;
+    }
+    .nombre-producto-detail {
+        font-size: 2.7rem;
+    }
+    .precio-producto-detail {
+        font-size: 2.4rem;
+    }
+}
+
+/*SMART*/
+@media screen and (max-width: 450px) and (min-width: 361px) {
+    .cantidades {
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        width: 20rem;
+        gap: 2rem;
+    }
+    .terminarCompra {
+        width: 75vw;
+        font-size: 2.7rem;
+        margin: auto 1rem;
+        padding: 1rem;
+    }
+    .boton-agregar-detail {
+        font-size: 2.7rem;
+        width: 75vw;
+        padding: 1rem;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+    .numero-cantidades {
+        font-size: 2.4rem;
+    }
+    .signo-menos {
+        height: 3.4rem;
+        width: 3.4rem;
+        font-size: 2.3rem;
+        margin-right: 2rem;
+    }
+    .signo-mas {
+        height: 3.4rem;
+        width: 3.4rem;
+        font-size: 2.3rem;
+        margin-left: 2rem;
+    }
+    .boton-detalles {
+        font-size: 2.7rem;
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+    .producto-detail {
+        width: 50vw;
+        margin-top: 3rem;
+    }
+    .nombre-producto-detail {
+        font-size: 2.7rem;
+    }
+    .precio-producto-detail {
+        font-size: 2.4rem;
+    }
+}
+
+/*TABLET*/
+@media screen and (max-width: 687px) and (min-width: 450px) {
+    .cantidades {
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        width: 20rem;
+        gap: 2.3rem;
+    }
+    .terminarCompra {
+        width: 75vw;
+        font-size: 2.7rem;
+        margin: auto 1rem;
+        padding: 1rem;
+    }
+    .boton-agregar-detail {
+        font-size: 2.7rem;
+        width: 75vw;
+        padding: 1rem;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+    .numero-cantidades {
+        font-size: 2.4rem;
+    }
+    .signo-menos {
+        height: 3.4rem;
+        width: 3.4rem;
+        font-size: 2.3rem;
+        margin-right: 2rem;
+    }
+    .signo-mas {
+        height: 3.4rem;
+        width: 3.4rem;
+        font-size: 2.3rem;
+        margin-left: 2rem;
+    }
+    .boton-detalles {
+        font-size: 2.7rem;
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+    .producto-detail {
+        width: 50vw;
+        margin-top: 3rem;
+    }
+    .nombre-producto-detail {
+        font-size: 2.7rem;
+    }
+    .precio-producto-detail {
+        font-size: 2.4rem;
+    }
+}
+
+/*TABLET XL*/
+@media screen and (min-width: 687px) and (max-width: 900px) {
+    .cantidades {
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        width: 20rem;
+        gap: 3rem;
+    }
+    .terminarCompra {
+        width: 75vw;
+        font-size: 3rem;
+        margin: auto 1rem;
+        padding: 1rem;
+    }
+    .boton-agregar-detail {
+        font-size: 3rem;
+        width: 75vw;
+        padding: 1rem;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+    .numero-cantidades {
+        font-size: 2.7rem;
+    }
+    .signo-menos {
+        height: 3.7rem;
+        width: 3.7rem;
+        font-size: 2.5rem;
+        margin-right: 2rem;
+    }
+    .signo-mas {
+        height: 3.7rem;
+        width: 3.7rem;
+        font-size: 2.5rem;
+        margin-left: 2rem;
+    }
+    .boton-detalles {
+        font-size: 3rem;
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+    .producto-detail {
+        width: 50vw;
+        margin-top: 4rem;
+    }
+    .nombre-producto-detail {
+        font-size: 3rem;
+    }
+    .precio-producto-detail {
+        font-size: 2.7rem;
+    }
 }

@@ -1,14 +1,14 @@
 import '../styles/ItemDetailContainer.css';
 import ItemDetail from '../componentes/ItemDetail';
-import { getProducto } from '../services/products';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { getProductById } from '../app/api';
 
 const ItemDetailContainer = () => {
     const {idProducto} = useParams();
     const [item, setItem] = useState({});
     useEffect(() => {
-        getProducto(idProducto).then( data => {
+        getProductById(idProducto).then( data => {
             setItem(data)
         })
     }, [idProducto]);

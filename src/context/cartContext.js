@@ -2,7 +2,10 @@ import { useContext } from 'react';
 import {createContext,useState} from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 
+const MySwal = withReactContent(Swal);
 export const AppContext = createContext();
 export const useMyContext = () => useContext(AppContext);
 
@@ -38,15 +41,14 @@ const notifyEliminarTodo = () => toast.error('Carrito Vacío!', {
 });
 const CartContext = ({ children }) =>{
     const [state,setState] = useState([]);
-    const addToCart = (producto) => {
+    const addToCart = (producto, contador) => {
         notifyAgregarProducto();
-        const duplicado = state.find(prod => prod.id === producto.id);
-        duplicado?sumarCantidad():agregarProd();
+        producto.cantidad = Number(contador);
+        state.find(prod => prod.id === producto.id) ? sumarCantidad() : agregarProd();
         function sumarCantidad () {
-            state.splice(state.indexOf(duplicado), 1);
-            producto.cantidad = producto.cantidad + duplicado.cantidad;
-            state.push(producto);
-            setState(state)
+            const duplicado = state.find(prod => prod.id === producto.id);
+            duplicado.cantidad = producto.cantidad + duplicado.cantidad;
+            setState([...(state.filter(prod => prod.id !== producto.id)), duplicado])
         }
         function agregarProd () {
             setState([...state, producto]);
@@ -60,8 +62,18 @@ const CartContext = ({ children }) =>{
         notifyEliminarProducto();
         setState(state.filter(p => p.id !== producto.id))
     };
+    const terminarCompra = () => {
+        MySwal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Compra Finalizada',
+            showConfirmButton: false,
+            timer: 1500
+        });
+        setState([])
+    }
     return (
-        <AppContext.Provider value={{state, setState, addToCart, eliminarTodo, eliminarProducto}}>
+        <AppContext.Provider value={{state, setState, addToCart, eliminarTodo, eliminarProducto, terminarCompra}}>
             {children}
         </AppContext.Provider>
     );
