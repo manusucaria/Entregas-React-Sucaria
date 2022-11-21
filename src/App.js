@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <CartContext>
-        <Router />
+        <Router basename={process.env.PUBLIC_URL}/>
       </CartContext>
     </div>
   );
