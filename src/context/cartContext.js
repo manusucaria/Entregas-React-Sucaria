@@ -43,15 +43,12 @@ const CartContext = ({ children }) =>{
     const [state,setState] = useState([]);
     const addToCart = (producto, contador) => {
         notifyAgregarProducto();
-        producto.cantidad = Number(contador);
-        state.find(prod => prod.id === producto.id) ? sumarCantidad() : agregarProd();
+        const productoNuevo = {...producto, cantidad:contador};
+        state.find(prod => prod.id === productoNuevo.id) ? sumarCantidad() : setState([...state, productoNuevo]);
         function sumarCantidad () {
             const duplicado = state.find(prod => prod.id === producto.id);
-            duplicado.cantidad = producto.cantidad + duplicado.cantidad;
+            duplicado.cantidad = productoNuevo.cantidad + duplicado.cantidad;
             setState([...(state.filter(prod => prod.id !== producto.id)), duplicado])
-        }
-        function agregarProd () {
-            setState([...state, producto]);
         }
     };
     const eliminarTodo = () => {
