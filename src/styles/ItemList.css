@@ -5,3 +5,15 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+/*CEL*/
+@media screen and (max-width: 361px) {
+.contenedor-signos {
+        grid-template-columns: auto;
+    }
+}
+/*SMART*/
+@media screen and (max-width: 450px) and (min-width: 361px) {
+    .contenedor-signos {
+            grid-template-columns: auto;
+    }
+}

@@ -54,8 +54,8 @@
 /*SMART*/
 @media screen and (max-width: 450px) and (min-width: 361px) {
     .titulo-nosotros {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-top: .7rem;
+        padding-bottom: .7rem;
         font-size: 2.5rem;
     }
     .texto-vid {
@@ -80,9 +80,9 @@
 /*TABLET XL*/
 @media screen and (min-width: 687px) and (max-width: 900px) {
     .titulo-nosotros {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        font-size: 3.7rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        font-size: 3.3rem;
     }
     .texto-vid {
         padding: 1.7rem;

@@ -19,7 +19,7 @@ const ItemListContainer = () => {
     }, [idTipo]);
     return (
         <div className= "contenedor-itemlist">
-            <h2 className='titulo-productos'>Conocé Nuestros Productos</h2>
+            <h2 className='titulo-productos-item'>Conocé Nuestros Productos</h2>
             <div className='categorias'>
                 <Link className='listas-categorias' to={process.env.PUBLIC_URL + '/productos/budines'}>Budines</Link>
                 <Link className='listas-categorias' to={process.env.PUBLIC_URL + '/productos/tortas'}>Tortas</Link>

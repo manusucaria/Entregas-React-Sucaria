@@ -3,7 +3,7 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
-.titulo-productos{
+.titulo-productos-item{
     margin: 0;
     height: 100%;
     background-color: #f69e51;
@@ -35,7 +35,7 @@
 
 /*CEL*/
 @media screen and (max-width: 361px) {
-    .titulo-productos {
+    .titulo-productos-item {
         padding-top: .7rem;
         padding-bottom: .7rem;
         font-size: 2.4rem;
@@ -51,9 +51,9 @@
 
 /*SMART*/
 @media screen and (max-width: 450px) and (min-width: 361px) {
-    .titulo-productos {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+    .titulo-productos-item {
+        padding-top: .7rem;
+        padding-bottom: .7rem;
         font-size: 2.5rem;
     }
     .categorias {
@@ -67,7 +67,7 @@
 
 /*TABLET*/
 @media screen and (max-width: 687px) and (min-width: 450px) {
-    .titulo-productos {
+    .titulo-productos-item {
         padding-top: 1.7rem;
         padding-bottom: 1.7rem;
         font-size: 3.3rem;
@@ -83,10 +83,10 @@
 
 /*TABLET XL*/
 @media screen and (min-width: 687px) and (max-width: 900px) {
-    .titulo-productos {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        font-size: 3.7rem;
+    .titulo-productos-item {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        font-size: 3.3rem;
     }
     .categorias {
         gap: 3.7rem;
@@ -99,7 +99,7 @@
 
 /*DESKTOP*/
 @media screen and (min-width: 900px) and (max-width: 1110px) {
-    .titulo-productos {
+    .titulo-productos-item {
         padding-top: 3rem;
         padding-bottom: 3rem;
         font-size: 4.3rem;
@@ -115,7 +115,7 @@
 
 /* WIDE */
 @media screen and (min-width: 1110px) and (max-width: 1350px) {
-    .titulo-productos {
+    .titulo-productos-item {
         padding-top: 3rem;
         padding-bottom: 3rem;
         font-size: 4.3rem;
