@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "Entregas-React-Sucaria;/static/css/main.95db5dc6.css",
-    "main.js": "Entregas-React-Sucaria;/static/js/main.782d2295.js",
+    "main.js": "Entregas-React-Sucaria;/static/js/main.54e8a5a5.js",
     "static/media/inicio.mp4": "Entregas-React-Sucaria;/static/media/inicio.5c8cc7f6f278493267fb.mp4",
     "static/media/nosotros.mp4": "Entregas-React-Sucaria;/static/media/nosotros.6124314ccc23cff8049f.mp4",
     "static/media/hero.jpg": "Entregas-React-Sucaria;/static/media/hero.1de7ed0edb3f2f8c5c36.jpg",
@@ -15,10 +15,10 @@
     "static/media/copyright.ico": "Entregas-React-Sucaria;/static/media/copyright.bac4f0a6a97e0fbd6f71.ico",
     "index.html": "Entregas-React-Sucaria;/index.html",
     "main.95db5dc6.css.map": "Entregas-React-Sucaria;/static/css/main.95db5dc6.css.map",
-    "main.782d2295.js.map": "Entregas-React-Sucaria;/static/js/main.782d2295.js.map"
+    "main.54e8a5a5.js.map": "Entregas-React-Sucaria;/static/js/main.54e8a5a5.js.map"
   },
   "entrypoints": [
     "static/css/main.95db5dc6.css",
-    "static/js/main.782d2295.js"
+    "static/js/main.54e8a5a5.js"
   ]
 }
