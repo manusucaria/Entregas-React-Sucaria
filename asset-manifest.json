@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "Entregas-React-Sucaria;/static/css/main.9377d52e.css",
-    "main.js": "Entregas-React-Sucaria;/static/js/main.54e8a5a5.js",
-    "static/media/inicio.mp4": "Entregas-React-Sucaria;/static/media/inicio.5c8cc7f6f278493267fb.mp4",
-    "static/media/nosotros.mp4": "Entregas-React-Sucaria;/static/media/nosotros.6124314ccc23cff8049f.mp4",
-    "static/media/hero.jpg": "Entregas-React-Sucaria;/static/media/hero.1de7ed0edb3f2f8c5c36.jpg",
-    "static/media/portada2.jpg": "Entregas-React-Sucaria;/static/media/portada2.8726836b89548e4537e1.jpg",
-    "static/media/portada3.jpg": "Entregas-React-Sucaria;/static/media/portada3.ce102f305dbc65c3942a.jpg",
-    "static/media/BrownieCake.otf": "Entregas-React-Sucaria;/static/media/BrownieCake.6b08a2986851641c102a.otf",
-    "static/media/portada4.jpg": "Entregas-React-Sucaria;/static/media/portada4.10f8a9ec3db214f709b3.jpg",
-    "static/media/portada1.jpg": "Entregas-React-Sucaria;/static/media/portada1.e450be910c85847ff667.jpg",
-    "static/media/Let's Bake Muffins - OTF.otf": "Entregas-React-Sucaria;/static/media/Let's Bake Muffins - OTF.e135e98bf023064b0912.otf",
-    "static/media/portada.jpg": "Entregas-React-Sucaria;/static/media/portada.d3dbcbebc5b2a3e7ca8a.jpg",
-    "static/media/copyright.ico": "Entregas-React-Sucaria;/static/media/copyright.bac4f0a6a97e0fbd6f71.ico",
-    "index.html": "Entregas-React-Sucaria;/index.html",
-    "main.9377d52e.css.map": "Entregas-React-Sucaria;/static/css/main.9377d52e.css.map",
-    "main.54e8a5a5.js.map": "Entregas-React-Sucaria;/static/js/main.54e8a5a5.js.map"
+    "main.css": "/Entregas-React-Sucaria/static/css/main.17579daf.css",
+    "main.js": "/Entregas-React-Sucaria/static/js/main.d9511d8a.js",
+    "static/media/inicio.mp4": "/Entregas-React-Sucaria/static/media/inicio.5c8cc7f6f278493267fb.mp4",
+    "static/media/nosotros.mp4": "/Entregas-React-Sucaria/static/media/nosotros.6124314ccc23cff8049f.mp4",
+    "static/media/hero.jpg": "/Entregas-React-Sucaria/static/media/hero.1de7ed0edb3f2f8c5c36.jpg",
+    "static/media/portada2.jpg": "/Entregas-React-Sucaria/static/media/portada2.8726836b89548e4537e1.jpg",
+    "static/media/portada3.jpg": "/Entregas-React-Sucaria/static/media/portada3.ce102f305dbc65c3942a.jpg",
+    "static/media/BrownieCake.otf": "/Entregas-React-Sucaria/static/media/BrownieCake.6b08a2986851641c102a.otf",
+    "static/media/portada4.jpg": "/Entregas-React-Sucaria/static/media/portada4.10f8a9ec3db214f709b3.jpg",
+    "static/media/portada1.jpg": "/Entregas-React-Sucaria/static/media/portada1.e450be910c85847ff667.jpg",
+    "static/media/Let's Bake Muffins - OTF.otf": "/Entregas-React-Sucaria/static/media/Let's Bake Muffins - OTF.e135e98bf023064b0912.otf",
+    "static/media/portada.jpg": "/Entregas-React-Sucaria/static/media/portada.d3dbcbebc5b2a3e7ca8a.jpg",
+    "static/media/copyright.ico": "/Entregas-React-Sucaria/static/media/copyright.bac4f0a6a97e0fbd6f71.ico",
+    "index.html": "/Entregas-React-Sucaria/index.html",
+    "main.17579daf.css.map": "/Entregas-React-Sucaria/static/css/main.17579daf.css.map",
+    "main.d9511d8a.js.map": "/Entregas-React-Sucaria/static/js/main.d9511d8a.js.map"
   },
   "entrypoints": [
-    "static/css/main.9377d52e.css",
-    "static/js/main.54e8a5a5.js"
+    "static/css/main.17579daf.css",
+    "static/js/main.d9511d8a.js"
   ]
 }
