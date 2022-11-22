@@ -2,25 +2,6 @@ import React, { useEffect, useState } from 'react';
 import '../styles/Nosotros.css';
 import video from '../assets/video/nosotros.mp4';
 
-// let textoNos = "";
-// const textoTitulo = "En Dulce Capricho priorizamos el sabor y la calidad desde hace más de 20 años, para acompañar a cada familia en los placeres del día a día.";
-// let texto = (str) => {
-//     let arrTexto = str.split("");
-//     let i = 0;
-//     let imprimirStr = setInterval(function() {
-//         if(arrTexto[i] === ""){
-//             textoNos += arrTexto[i + 1];
-//             i += 2;
-//         }else{
-//             textoNos += arrTexto[i];
-//             i++;
-//         }
-//         if(i === arrTexto.length){
-//             clearInterval(imprimirStr);
-//         }
-//     },100);
-// };
-// texto(textoTitulo);
 const texto = "En Dulce Capricho priorizamos el sabor y la calidad desde hace más de 20 años, para acompañar a cada familia en los placeres del día a día.";
 const Nosotros = () => {
   const [text1, setText1] = useState("");
