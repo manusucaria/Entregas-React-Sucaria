@@ -2,8 +2,9 @@ import { collection, getDocs, query, doc, getDoc, addDoc, deleteDoc, updateDoc, 
 import { db } from './firebase';
 
 // CREATE
-export const createItem = async(obj) => {
-    const colRef = collection(db, 'items');
+export const createPedido = async(obj) => {
+    const colRef = collection(db, 'pedidos');
+    console.log(obj)
     const data = await addDoc(colRef, obj);
     return data.id;
 }
