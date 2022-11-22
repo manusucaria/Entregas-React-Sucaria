@@ -2,23 +2,10 @@ import { useContext } from 'react';
 import {createContext,useState} from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Swal from 'sweetalert2';
-import withReactContent from 'sweetalert2-react-content';
-import { createPedido } from '../app/api';
 
-const MySwal = withReactContent(Swal);
 export const AppContext = createContext();
 export const useMyContext = () => useContext(AppContext);
 
-const notifyterminarCompra = () => {
-    MySwal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'Compra Finalizada',
-        showConfirmButton: false,
-        timer: 1500
-    });
-}
 const notifyEliminarProducto = () => toast.error('Producto Eliminado!', {
     position: "bottom-left",
     autoClose: 2000,
@@ -69,19 +56,8 @@ const CartContext = ({ children }) =>{
         notifyEliminarProducto();
         setState(state.filter(p => p.id !== producto.id))
     };
-    const terminarCompra = () => {
-        const pedidoFinal = [];
-        state.map((producto) => {
-            const pedido = {nombre: producto.nombre, precio: producto.precio * producto.cantidad, cantidad:producto.cantidad};
-            pedidoFinal.push(pedido)
-        });
-        const cliente = {nombre:"Juan Rodriguez", telefono:"12312312", email:"juanro@gmail.com"};
-        createPedido({pedidoFinal, cliente});
-        notifyterminarCompra();
-        setState([])
-    }
     return (
-        <AppContext.Provider value={{state, setState, addToCart, eliminarTodo, eliminarProducto, terminarCompra}}>
+        <AppContext.Provider value={{state, setState, addToCart, eliminarTodo, eliminarProducto}}>
             {children}
         </AppContext.Provider>
     );
