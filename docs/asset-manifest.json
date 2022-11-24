@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Entregas-React-Sucaria/static/css/main.9c21d4c2.css",
+    "main.css": "/Entregas-React-Sucaria/static/css/main.4a9198f6.css",
     "main.js": "/Entregas-React-Sucaria/static/js/main.89de1613.js",
     "static/media/inicio.mp4": "/Entregas-React-Sucaria/static/media/inicio.5c8cc7f6f278493267fb.mp4",
     "static/media/nosotros.mp4": "/Entregas-React-Sucaria/static/media/nosotros.6124314ccc23cff8049f.mp4",
@@ -14,11 +14,11 @@
     "static/media/portada.jpg": "/Entregas-React-Sucaria/static/media/portada.d3dbcbebc5b2a3e7ca8a.jpg",
     "static/media/copyright.ico": "/Entregas-React-Sucaria/static/media/copyright.bac4f0a6a97e0fbd6f71.ico",
     "index.html": "/Entregas-React-Sucaria/index.html",
-    "main.9c21d4c2.css.map": "/Entregas-React-Sucaria/static/css/main.9c21d4c2.css.map",
+    "main.4a9198f6.css.map": "/Entregas-React-Sucaria/static/css/main.4a9198f6.css.map",
     "main.89de1613.js.map": "/Entregas-React-Sucaria/static/js/main.89de1613.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c21d4c2.css",
+    "static/css/main.4a9198f6.css",
     "static/js/main.89de1613.js"
   ]
 }

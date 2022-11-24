@@ -34,13 +34,13 @@
     text-align: center;
     padding-bottom: 3rem;
     font-size: 4.5rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 .hero{
     margin-bottom: 0;
     border-bottom: 1px white solid;
     display: grid;
-    height: 75vh;
+    height: 75%;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
@@ -316,7 +316,7 @@ iframe{
     }
     .categorias-home {
         gap: 1rem;
-        margin-bottom: 5rem;
+        margin-bottom: 1rem;
     }
     .listas-categorias-home {
         font-size: 2rem;
@@ -371,7 +371,7 @@ iframe{
         padding-top: .7rem;
         padding-bottom: .7rem;
         margin-top: 0;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
     }
     .titulo-iframe {
         font-size: 2.9rem;
@@ -382,7 +382,7 @@ iframe{
     }
     .categorias-home {
         gap: 2.1rem;
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
     }
     .listas-categorias-home {
         font-size: 2.3rem;
@@ -430,14 +430,14 @@ iframe{
         display: none;
     }
     .contenedor-titulo-productos {
-        margin-bottom: 3.4rem;
+        margin-bottom: 3rem;
     }
     .titulo-productos {
         font-size: 3.5rem;
         padding-top: 1.7rem;
         padding-bottom: 1.7rem;
         margin-top: 0;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
     }
     .titulo-iframe {
         font-size: 3.5rem;
@@ -448,7 +448,7 @@ iframe{
     }
     .categorias-home {
         gap: 2.7rem;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
     .listas-categorias-home {
         font-size: 2.7rem;
@@ -496,14 +496,14 @@ iframe{
         font-size: 2.1rem;
     }
     .contenedor-titulo-productos {
-        margin-bottom: 3.4rem;
+        margin-bottom: 3rem;
     }
     .titulo-productos {
         font-size: 3.3rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
         margin-top: 0;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
     }
     .titulo-iframe {
         font-size: 3.3rem;
@@ -514,7 +514,7 @@ iframe{
     }
     .categorias-home {
         gap: 3.7rem;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
     .listas-categorias-home {
         font-size: 3.1rem;
