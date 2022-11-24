@@ -69,8 +69,6 @@
 .contenedorItems{
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
 }
 .filas-tabla{
     display: grid;
@@ -119,16 +117,16 @@
     border-bottom: black .5px solid;
     border-top: black .5px solid;
 }
-.listas-carrito-4 {
-    height: 4rem;
-    margin: auto 0;
-    text-align: center;
+.boton-eliminar-producto {
+    border: none;
+    border-right: black 1px solid;
+    border-bottom: black 1px solid;
     grid-column: 4/5;
     grid-row: auto;
-    font-size: 3rem;
-    border-right: black 1px solid;
-    border-bottom: black .5px solid;
-    border-top: black .5px solid;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: white;
+    background-color: #f69e51;
 }
 .titulos-carrito-1{
     text-align: center;
@@ -136,6 +134,7 @@
     grid-row: auto;
     font-size: 3.3rem;
     font-weight: 600;
+    margin: 0;
     border-top: black 2px solid;
     border-right: black 2px solid;
     border-left: black 2px solid;
@@ -147,6 +146,7 @@
     grid-row: auto;
     font-size: 3.3rem;
     font-weight: 600;
+    margin: 0;
     border-top: black 2px solid;
     border-right: black 2px solid;
     border-bottom: black 1px solid;
@@ -157,6 +157,7 @@
     grid-row: auto;
     font-size: 3.3rem;
     font-weight: 600;
+    margin: 0;
     border-top: black 2px solid;
     border-right: black 2px solid;
     border-bottom: black 1px solid;
@@ -167,6 +168,7 @@
     grid-row: auto;
     font-size: 3.3rem;
     font-weight: 600;
+    margin: 0;
     border-top: black 2px solid;
     border-right: black 2px solid;
     border-bottom: black 1px solid;
@@ -199,16 +201,7 @@
     font-weight: 500;
     margin: auto;
     color: white;
-    padding: 1rem;
-}
-.boton-eliminar-producto{
-    border: none;
-    border-right: black 1px solid;
-    border-bottom: black 1px solid;
-    font-size: 2.5rem;
-    font-weight: 400;
-    color: white;
-    background-color: #f69e51;
+    padding: .5rem;
 }
 
 /*CEL*/
@@ -232,7 +225,7 @@
     }
     .nombre-item {
         padding-left: .1rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin-right: .1rem;
     }
     .foto-producto {
@@ -303,7 +296,7 @@
     }
     .nombre-item {
         padding-left: .1rem;
-        font-size: 1rem;
+        font-size: .9rem;
         margin-right: .1rem;
     }
     .foto-producto {
@@ -374,7 +367,7 @@
     }
     .nombre-item {
         padding-left: .1rem;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         margin-right: .3rem;
     }
     .foto-producto {
@@ -417,7 +410,7 @@
     }
     .texto-eliminar {
         font-size: 2.4rem;
-        padding: .9rem;
+        padding: .5rem;
     }
     .boton-eliminar-producto {
         font-size: 1.7rem;
@@ -442,7 +435,7 @@
     }
     .nombre-item {
         padding-left: .3rem;
-        font-size: 2.3rem;
+        font-size: 1.9rem;
         margin-right: 1rem;
     }
     .foto-producto {
@@ -485,7 +478,7 @@
     }
     .texto-eliminar {
         font-size: 2.6rem;
-        padding: 1rem;
+        padding: .5rem;
     }
     .boton-eliminar-producto {
         font-size: 1.9rem;
@@ -510,7 +503,7 @@
     }
     .nombre-item {
         padding-left: .5rem;
-        font-size: 2.7rem;
+        font-size: 2.5rem;
         margin-right: 1.5rem;
     }
     .foto-producto {
@@ -553,7 +546,7 @@
     }
     .texto-eliminar {
         font-size: 2.7rem;
-        padding: 1rem;
+        padding: .5rem;
     }
     .boton-eliminar-producto {
         font-size: 2.1rem;
@@ -578,7 +571,7 @@
     }
     .nombre-item {
         padding-left: 1rem;
-        font-size: 2.9rem;
+        font-size: 2.8rem;
         margin-right: 1.5rem;
     }
     .foto-producto {
@@ -621,7 +614,7 @@
     }
     .texto-eliminar {
         font-size: 3rem;
-        padding: 1rem;
+        padding: .5rem;
     }
     .boton-eliminar-producto {
         font-size: 2.5rem;
