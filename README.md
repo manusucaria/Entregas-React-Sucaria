@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Trabajo Final de React Manuel Sucaria
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## E-commerce Dulce Capricho
 
-## Available Scripts
+### Descripción
 
-In the project directory, you can run:
+#### Generales
 
-### `npm start`
+-Toda las paginas cuentan con un NavBar de navegación que contiene un icono animado, una lista de paginas y un icono que direcciona al carrito de compras
+-Toda las paginas Muestran el footer donde se indica el copyright y se muestran links que direccionan a partes de la web
+-Los productos no tienen stock porque al ser una pasteleria los stocks son constantes
+-Todo se conecta con la base de datos de Firebase donde a cada pedido nos indica el nombre, telefono y email del cliente, asi como los detalles del pedido y la fecha y hora del mismo
+-El dueño del emprendimiento puede actualizar y agregar productos solo actualizando Firebase
+-La Web es full responsive para todos los dispositivos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Páginas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Pagina de Inicio:
+   1.1 Contiene un video de inicio que se pierde con z-index como animación.
+   1.2 Contiene Un Hero con una breve descripción de la empresa
+   1.3 Contiene los productos precargados que al hacerles click nos direcciona a la pagina de productos
+   1.4 Contiene la ubicacion del local
+2. Pagina de Productos
+   2.1 Presenta un listado de productos ordenables y filtrables por categoria
+   2.2 Al clickear en uno nos direcciona al detalle del producto, donde podremos indicar cantidad y proceder con la compra
+   3 Pagina de Carrito
+   3.1 Ofrece el listado de productos agregados, donde se podra continuar y finalizar la compra
+   4 Pagina Nosotros
+   4.1 Muestra un video con una animacioón de texto hecha con js sobre la empresa y su trayectoria

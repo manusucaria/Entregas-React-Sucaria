@@ -1,6 +1,14 @@
 .body-carrito{
     min-height: 67vh;
 }
+.idPedido {
+    display: flex;
+    margin: auto;
+    width: auto;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 1rem;
+}
 .titulo-carrito{
     margin: 0;
     height: 100%;
@@ -58,6 +66,12 @@
     width: 100%;
     object-fit: cover;
 }
+.contenedorItems{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
 .filas-tabla{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -74,8 +88,8 @@
     grid-row: auto;
     border-right: black 1px solid;
     border-left: black 1px solid;
-    border-bottom: black 1px solid;
-    border-top: black 1px solid;
+    border-bottom: black .5px solid;
+    border-top: black .5px solid;
 }
 .listas-carrito-2 {
     display: flex;
@@ -88,8 +102,8 @@
     grid-row: auto;
     font-size: 3rem;
     border-right: black 1px solid;
-    border-bottom: black 1px solid;
-    border-top: black 1px solid;
+    border-bottom: black .5px solid;
+    border-top: black .5px solid;
 }
 .listas-carrito-3 {
     display: flex;
@@ -102,8 +116,8 @@
     grid-row: auto;
     font-size: 3rem;
     border-right: black 1px solid;
-    border-bottom: black 1px solid;
-    border-top: black 1px solid;
+    border-bottom: black .5px solid;
+    border-top: black .5px solid;
 }
 .listas-carrito-4 {
     height: 4rem;
@@ -113,8 +127,8 @@
     grid-row: auto;
     font-size: 3rem;
     border-right: black 1px solid;
-    border-bottom: black 1px solid;
-    border-top: black 1px solid;
+    border-bottom: black .5px solid;
+    border-top: black .5px solid;
 }
 .titulos-carrito-1{
     text-align: center;
@@ -255,6 +269,10 @@
         font-size: 1.7rem;
         padding: .7rem;
     }
+    .idPedido {
+        font-size: 1.7rem;
+        padding: .7rem;
+    }
     .texto-eliminar {
         font-size: 1.6rem;
         padding: .5rem;
@@ -319,6 +337,10 @@
         font-size: 2.1rem;
     }
     .total {
+        font-size: 2.1rem;
+        padding: .7rem;
+    }
+    .idPedido {
         font-size: 2.1rem;
         padding: .7rem;
     }
@@ -389,6 +411,10 @@
         font-size: 2.3rem;
         padding: .9rem;
     }
+    .idPedido {
+        font-size: 2.3rem;
+        padding: .9rem;
+    }
     .texto-eliminar {
         font-size: 2.4rem;
         padding: .9rem;
@@ -450,6 +476,10 @@
         font-size: 3rem;
     }
     .total {
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+    .idPedido {
         font-size: 2.5rem;
         padding: 1rem;
     }
@@ -517,6 +547,10 @@
         font-size: 2.6rem;
         padding: 1rem;
     }
+    .idPedido {
+        font-size: 2.6rem;
+        padding: 1rem;
+    }
     .texto-eliminar {
         font-size: 2.7rem;
         padding: 1rem;
@@ -578,6 +612,10 @@
         font-size: 3.1rem;
     }
     .total {
+        font-size: 2.9rem;
+        padding: 1rem;
+    }
+    .idPedido {
         font-size: 2.9rem;
         padding: 1rem;
     }

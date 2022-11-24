@@ -1,5 +1,6 @@
 import React from 'react'
 import CartItem from '../componentes/CartItem';
+import { useState } from 'react';
 import { useMyContext } from '../context/cartContext';
 import '../styles/Cart.css';
 import { ToastContainer } from 'react-toastify';
@@ -13,17 +14,21 @@ import withReactContent from 'sweetalert2-react-content';
 const MySwal = withReactContent(Swal);
 
 const Cart = () => {
-    const {state, setState, eliminarTodo} = useMyContext([]);
+    const {state, eliminarTodo, compraFinalizada} = useMyContext([]);
+    const [idPedido, setIdPedido] = useState();
     const total = state.map(item => item.precio*item.cantidad).reduce((prev, curr) => prev + curr, 0);
-    const terminarCompra = (data) => {
-        const pedidoFinal = [];
-        state.map((producto) => {
-            const pedido = {nombre: producto.nombre, precio: producto.precio * producto.cantidad, cantidad:producto.cantidad};
-            pedidoFinal.push(pedido)
-        });
+    const terminarCompra = async(data) => {
+        const pedidoFinal =  state.map((producto) => ({nombre: producto.nombre, precio: producto.precio * producto.cantidad, cantidad:producto.cantidad}));
         let cliente = data;
-        createPedido({pedidoFinal, cliente, total});
-        notifyCompra()
+        let hoy = new Date();
+        let fecha = hoy.toLocaleString();
+        const idPed = await createPedido({pedidoFinal, cliente, total, fecha});
+        setIdPedido(idPed);
+        // alert("la Id de su Pedido es: " + idPed)
+        compraFinalizada();
+        if(cliente.nombre && cliente.telefono && cliente.email){
+            notifyCompra()
+        }
     }
     function notifyCompra () {
         MySwal.fire({
@@ -38,18 +43,16 @@ const Cart = () => {
     return (
         <div className='body-carrito'>
             <h2 className='titulo-carrito'>Carrito</h2>
-            <table className='contenedor-prod-carrito'>
-                <thead>
-                    <tr className='filas-tabla'>
-                        <th className='titulos-carrito-1'>Nombre</th>
-                        <th className='titulos-carrito-2'>Cantidad</th>
-                        <th className='titulos-carrito-3'>Precio</th>
-                        <th className='titulos-carrito-4'>Opciones</th>
-                    </tr>
-                </thead>
+            <div className='contenedor-prod-carrito'>
+                <div className='filas-tabla'>
+                    <p className='titulos-carrito-1'>Nombre</p>
+                    <p className='titulos-carrito-2'>Cantidad</p>
+                    <p className='titulos-carrito-3'>Precio</p>
+                    <p className='titulos-carrito-4'>Opciones</p>
+                </div>
                 {
                     state.length !== 0?
-                    <div>
+                    <div className='contenedorItems'>
                         {state.map( (producto) =>
                             <CartItem
                                 producto = {producto}
@@ -66,7 +69,8 @@ const Cart = () => {
                     </div>
                     : <Link to={process.env.PUBLIC_URL + "/productos"} className= "carritoVacio">Volver a Productos</Link>
                 }
-            </table>
+                {idPedido?<p className='idPedido'>La ID de su pedido es: {idPedido}</p>:<p></p>}
+            </div>
             <ToastContainer />
         </div>
         )

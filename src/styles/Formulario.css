@@ -4,7 +4,7 @@
     justify-content: center;
 }
 .inputs{
-    padding: .3rem;
+    padding: .5rem;
     text-align: center;
     margin: auto;
     margin-bottom: 1rem;
@@ -14,19 +14,172 @@
     font-weight: 400;
 }
 .botonEnviar{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-top: 2rem;
     width: 40vw;
     height: 5rem;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 400;
+    background-color: #D98B48;
+}
+.botonEnviar:hover {
+    transition: all .5s ease;
+    background-color: #f69e51;
+    color: black;
 }
 .titulo-formulario{
     margin-top: 3rem;
     margin-bottom: 2rem;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 500;
+}
+
+/*CEL*/
+@media screen and (max-width: 361px) {
+    .titulo-formulario {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        font-size: 2.5rem;
+    }
+    .inputs {
+        padding: .5rem;
+        margin-bottom: .7rem;
+        height: 3.7rem;
+        width: 67vw;
+        font-size: 2.3rem;
+    }
+    .botonEnviar {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 2rem;
+        width: 40vw;
+        height: 3.9rem;
+        font-size: 1.5rem;
+    }
+}
+
+/*SMART*/
+@media screen and (max-width: 450px) and (min-width: 361px) {
+    .titulo-formulario {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        font-size: 2.9rem;
+    }
+    .inputs {
+        padding: .5rem;
+        margin-bottom: .7rem;
+        height: 3.7rem;
+        width: 67vw;
+        font-size: 2.3rem;
+    }
+    .botonEnviar {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 2rem;
+        width: 40vw;
+        height: 4.1rem;
+        font-size: 1.8rem;
+    }
+}
+
+/*TABLET*/
+@media screen and (max-width: 687px) and (min-width: 450px) {
+    .titulo-formulario {
+        margin-top: 2.5rem;
+        margin-bottom: 1.8rem;
+        font-size: 3rem;
+    }
+    .inputs {
+        padding: .5rem;
+        margin-bottom: 1rem;
+        height: 3.9rem;
+        width: 67vw;
+        font-size: 2.5rem;
+    }
+    .botonEnviar {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 2rem;
+        width: 40vw;
+        height: 4.3rem;
+        font-size: 2.1rem;
+    }
+}
+
+/*TABLET XL*/
+@media screen and (min-width: 687px) and (max-width: 900px) {
+    .titulo-formulario {
+        margin-top: 2.7rem;
+        margin-bottom: 1.9rem;
+        font-size: 3.1rem;
+    }
+    .inputs {
+        padding: .5rem;
+        margin-bottom: 1rem;
+        height: 4.1rem;
+        width: 67vw;
+        font-size: 2.7rem;
+    }
+    .botonEnviar {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 2rem;
+        width: 40vw;
+        height: 4.5rem;
+        font-size: 2.5rem;
+    }
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 900px) and (max-width: 1110px) {
+    .titulo-formulario {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        font-size: 3.3rem;
+    }
+    .inputs {
+        padding: .5rem;
+        margin-bottom: 1rem;
+        height: 4.3rem;
+        width: 67vw;
+        font-size: 3rem;
+    }
+    .botonEnviar {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 2rem;
+        width: 40vw;
+        height: 4.5rem;
+        font-size: 2.5rem;
+    }
+}
+
+/* WIDE */
+@media screen and (min-width: 1110px) and (max-width: 1350px) {
+    .titulo-formulario {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        font-size: 3.5rem;
+    }
+    .inputs {
+        padding: .5rem;
+        margin-bottom: 1rem;
+        height: 4.5rem;
+        width: 67vw;
+        font-size: 3.3rem;
+    }
+    .botonEnviar {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 2rem;
+        width: 40vw;
+        height: 4.5rem;
+        font-size: 2.5rem;
+    }
 }

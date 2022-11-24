@@ -36,6 +36,16 @@ const notifyEliminarTodo = () => toast.error('Carrito Vacío!', {
     progress: undefined,
     theme: "dark",
 });
+const notifyCompraFinalizada = () => toast.error('Compra Finalizada!', {
+    position: "bottom-left",
+    autoClose: 2000,
+    hideProgressBar: true,
+    closeOnClick: true,
+    pauseOnHover: false,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+});
 const CartContext = ({ children }) =>{
     const [state,setState] = useState([]);
     const addToCart = (producto, contador) => {
@@ -56,8 +66,12 @@ const CartContext = ({ children }) =>{
         notifyEliminarProducto();
         setState(state.filter(p => p.id !== producto.id))
     };
+    const compraFinalizada = () => {
+        notifyCompraFinalizada();
+        setState([])
+    };
     return (
-        <AppContext.Provider value={{state, setState, addToCart, eliminarTodo, eliminarProducto}}>
+        <AppContext.Provider value={{state, setState, addToCart, eliminarTodo, eliminarProducto, compraFinalizada}}>
             {children}
         </AppContext.Provider>
     );
