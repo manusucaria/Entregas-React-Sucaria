@@ -16,7 +16,7 @@ const Formulario = ({addOrder}) => {
                 <input className="inputs" type="text" placeholder="Nombre y Apellido" onChange={e => setNombre(e.target.value)} required/>
                 <input className="inputs" type="tel" placeholder="Teléfono" onChange={e => setTelefono(e.target.value)} required/>
                 <input className="inputs" type="email" placeholder="Email" onChange={e => setEmail(e.target.value)} required/>
-                <button type="button" className="botonEnviar" onClick={createCliente}>TERMINAR COMPRA</button>
+                <button type="button" className="botonEnviar" onClick={createCliente} disabled={nombre==="" || telefono==="" || email===""}>TERMINAR COMPRA</button>
             </form>
         </div>
     )
