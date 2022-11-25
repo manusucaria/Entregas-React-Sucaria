@@ -22,6 +22,7 @@
     margin: auto;
     margin-top: 2rem;
     width: 40vw;
+    color: white;
     height: 5rem;
     font-size: 3.5rem;
     font-weight: 400;
@@ -30,7 +31,7 @@
 .botonEnviar:hover {
     transition: all .5s ease;
     background-color: #f69e51;
-    color: black;
+    color: white;
 }
 .titulo-formulario{
     margin-top: 3rem;
