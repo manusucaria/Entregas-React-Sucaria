@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import {createContext,useState} from 'react';
+import { createContext, useState } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -47,10 +47,10 @@ const notifyCompraFinalizada = () => toast.error('Compra Finalizada!', {
     theme: "dark",
 });
 const CartContext = ({ children }) =>{
-    const [state,setState] = useState([]);
+    const [state, setState] = useState([]);
     const addToCart = (producto, contador) => {
         notifyAgregarProducto();
-        const productoNuevo = {...producto, cantidad:contador};
+        const productoNuevo = {...producto, cantidad: contador};
         state.find(prod => prod.id === productoNuevo.id) ? sumarCantidad() : setState([...state, productoNuevo]);
         function sumarCantidad () {
             const duplicado = state.find(prod => prod.id === producto.id);

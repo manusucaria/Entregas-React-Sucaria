@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 .lista-footer{
     text-decoration: none;
@@ -39,6 +39,9 @@
 
 /*CEL*/
 @media screen and (max-width: 361px) {
+    .listas-footer {
+        margin-top: 1rem;
+    }
     .lista-footer {
         text-decoration: none;
         color: black;
@@ -60,6 +63,9 @@
 
 /*SMART*/
 @media screen and (max-width: 450px) and (min-width: 361px) {
+    .listas-footer {
+        margin-top: 1rem;
+    }
     .lista-footer {
         text-decoration: none;
         color: black;
@@ -81,6 +87,9 @@
 
 /*TABLET*/
 @media screen and (max-width: 687px) and (min-width: 450px) {
+    .listas-footer {
+        margin-top: 1rem;
+    }
     .lista-footer {
         text-decoration: none;
         color: black;
@@ -102,6 +111,9 @@
 
 /*TABLET XL*/
 @media screen and (min-width: 687px) and (max-width: 900px) {
+    .listas-footer {
+        margin-top: 1rem;
+    }
     .lista-footer {
         text-decoration: none;
         color: black;
@@ -123,6 +135,9 @@
 
 /*DESKTOP*/
 @media screen and (min-width: 900px) and (max-width: 1110px) {
+    .listas-footer {
+        margin-top: 1.5rem;
+    }
     .lista-footer {
         text-decoration: none;
         color: black;

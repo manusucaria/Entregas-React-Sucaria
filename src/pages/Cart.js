@@ -18,13 +18,12 @@ const Cart = () => {
     const [idPedido, setIdPedido] = useState();
     const total = state.map(item => item.precio*item.cantidad).reduce((prev, curr) => prev + curr, 0);
     const terminarCompra = async(data) => {
-        const pedidoFinal =  state.map((producto) => ({nombre: producto.nombre, precio: producto.precio * producto.cantidad, cantidad:producto.cantidad}));
+        const pedidoFinal = state.map((producto) => ({nombre: producto.nombre, precio: producto.precio * producto.cantidad, cantidad: producto.cantidad}));
         let cliente = data;
         let hoy = new Date();
         let fecha = hoy.toLocaleString();
         const idPed = await createPedido({pedidoFinal, cliente, total, fecha});
         setIdPedido(idPed);
-        // alert("la Id de su Pedido es: " + idPed)
         compraFinalizada();
         if(cliente.nombre && cliente.telefono && cliente.email){
             notifyCompra()

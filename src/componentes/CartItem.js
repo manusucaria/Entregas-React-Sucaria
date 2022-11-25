@@ -10,7 +10,7 @@ const CartItem = ({producto}) => {
             <div className='filas-tabla'>
                 <div className='listas-carrito-1'>
                     <p className='nombre-item'>{producto.nombre}</p>
-                    {producto && <img className='foto-producto' src={producto.imagen} alt="Foto de Producto" />}
+                    <img className='foto-producto' src={producto.imagen} alt="Foto de Producto" />
                 </div>
                 <p className='listas-carrito-2'>{producto.cantidad}</p>
                 <p className='listas-carrito-3'>${producto.precio*producto.cantidad}</p>

@@ -114,6 +114,7 @@
     margin-top: 4rem;
 }
 .datos-producto-detail {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,11 +159,11 @@
         padding: .7rem;
     }
     .boton-agregar-detail {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         width: 75vw;
-        padding: 1rem;
+        padding: .5rem;
         margin-bottom: 3rem;
-        margin-top: .7rem;
+        margin-top: .3rem;
     }
     .numero-cantidades {
         font-size: 2.3rem;
@@ -171,13 +172,13 @@
         height: 3.4rem;
         width: 3.4rem;
         font-size: 2.3rem;
-        margin-right: 2rem;
+        margin-right: 0;
     }
     .signo-mas {
         height: 3.4rem;
         width: 3.4rem;
         font-size: 2.3rem;
-        margin-left: 2rem;
+        margin-left: 0;
     }
     .boton-detalles {
         font-size: 2.4rem;
@@ -187,7 +188,7 @@
         margin-top: 1rem;
     }
     .producto-detail {
-        width: 50vw;
+        width: 75vw;
         margin-top: 2.7rem;
     }
     .nombre-producto-detail {
@@ -213,11 +214,10 @@
         padding: 1rem;
     }
     .boton-agregar-detail {
-        font-size: 2.7rem;
-        width: 75vw;
-        padding: 1rem;
-        margin-bottom: 3rem;
-        margin-top: 1rem;
+        font-size: 2.5rem;
+        width: 70vw;
+        padding: .5rem;
+        margin-top: .5rem;
     }
     .numero-cantidades {
         font-size: 2.4rem;
@@ -226,13 +226,13 @@
         height: 3.4rem;
         width: 3.4rem;
         font-size: 2.3rem;
-        margin-right: 2rem;
+        margin-right: 0;
     }
     .signo-mas {
         height: 3.4rem;
         width: 3.4rem;
         font-size: 2.3rem;
-        margin-left: 2rem;
+        margin-left: 0;
     }
     .boton-detalles {
         font-size: 2.7rem;
@@ -242,7 +242,7 @@
         margin-top: 1rem;
     }
     .producto-detail {
-        width: 50vw;
+        width: 70vw;
         margin-top: 3rem;
     }
     .nombre-producto-detail {
@@ -297,7 +297,7 @@
         margin-top: 1rem;
     }
     .producto-detail {
-        width: 50vw;
+        width: 75vw;
         margin-top: 3rem;
     }
     .nombre-producto-detail {
@@ -352,7 +352,7 @@
         margin-top: 1rem;
     }
     .producto-detail {
-        width: 50vw;
+        width: 75vw;
         margin-top: 4rem;
     }
     .nombre-producto-detail {
@@ -360,5 +360,21 @@
     }
     .precio-producto-detail {
         font-size: 2.7rem;
+    }
+}
+@media screen and (min-width: 901px) and (max-width: 1110px) {
+    .producto-detail{
+        width: 70vw;
+    }
+    .boton-agregar-detail {
+        width: 70vw;
+    }
+}
+@media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .producto-detail {
+        width: 60vw;
+    }
+    .boton-agregar-detail {
+        width: 70vw;
     }
 }
