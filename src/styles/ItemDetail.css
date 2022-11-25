@@ -189,13 +189,13 @@
     }
     .producto-detail {
         width: 75vw;
-        margin-top: 2.7rem;
+        margin-top: 2.4rem;
     }
     .nombre-producto-detail {
-        font-size: 2.7rem;
+        font-size: 2.2rem;
     }
     .precio-producto-detail {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 }
 
@@ -246,10 +246,10 @@
         margin-top: 3rem;
     }
     .nombre-producto-detail {
-        font-size: 2.7rem;
+        font-size: 2.4rem;
     }
     .precio-producto-detail {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 }
 
@@ -301,10 +301,10 @@
         margin-top: 3rem;
     }
     .nombre-producto-detail {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
     }
     .precio-producto-detail {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 }
 
