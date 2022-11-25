@@ -23,7 +23,7 @@
 2. Pagina de Productos
    2.1 Presenta un listado de productos ordenables y filtrables por categoria
    2.2 Al clickear en uno nos direcciona al detalle del producto, donde podremos indicar cantidad y proceder con la compra
-   3 Pagina de Carrito
+3. Pagina de Carrito
    3.1 Ofrece el listado de productos agregados, donde se podra continuar y finalizar la compra
-   4 Pagina Nosotros
+4. Pagina Nosotros
    4.1 Muestra un video con una animacioón de texto hecha con js sobre la empresa y su trayectoria
