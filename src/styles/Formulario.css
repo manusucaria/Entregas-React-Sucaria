@@ -35,18 +35,28 @@
 }
 .titulo-formulario{
     margin-top: 3rem;
-    margin-bottom: 2rem;
     text-align: center;
     font-size: 3.5rem;
     font-weight: 500;
+}
+.sub-formulario {
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    font-size: 2.7rem;
+    font-weight: 400;
+    text-align: center;
 }
 
 /*CEL*/
 @media screen and (max-width: 361px) {
     .titulo-formulario {
         margin-top: 2rem;
-        margin-bottom: 1.5rem;
         font-size: 2.5rem;
+    }
+    .sub-formulario {
+        margin-top: .3rem;
+        margin-bottom: 1.5rem;
+        font-size: 2.1rem;
     }
     .inputs {
         padding: .5rem;
@@ -69,8 +79,12 @@
 @media screen and (max-width: 450px) and (min-width: 361px) {
     .titulo-formulario {
         margin-top: 2rem;
-        margin-bottom: 1.5rem;
         font-size: 2.9rem;
+    }
+    .sub-formulario {
+        margin-top: .3rem;
+        margin-bottom: 1.5rem;
+        font-size: 2.3rem;
     }
     .inputs {
         padding: .5rem;
@@ -93,8 +107,12 @@
 @media screen and (max-width: 687px) and (min-width: 450px) {
     .titulo-formulario {
         margin-top: 2.5rem;
-        margin-bottom: 1.8rem;
         font-size: 3rem;
+    }
+    .sub-formulario {
+        margin-top: .3rem;
+        margin-bottom: 1.8rem;
+        font-size: 2.5rem;
     }
     .inputs {
         padding: .5rem;
@@ -117,8 +135,12 @@
 @media screen and (min-width: 687px) and (max-width: 900px) {
     .titulo-formulario {
         margin-top: 2.7rem;
-        margin-bottom: 1.9rem;
         font-size: 3.1rem;
+    }
+    .sub-formulario {
+        margin-top: .3rem;
+        margin-bottom: 1.9rem;
+        font-size: 2.5rem;
     }
     .inputs {
         padding: .5rem;
@@ -141,8 +163,12 @@
 @media screen and (min-width: 900px) and (max-width: 1110px) {
     .titulo-formulario {
         margin-top: 3rem;
-        margin-bottom: 2rem;
         font-size: 3.3rem;
+    }
+    .sub-formulario {
+        margin-top: .5rem;
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
     }
     .inputs {
         padding: .5rem;
@@ -165,8 +191,11 @@
 @media screen and (min-width: 1110px) and (max-width: 1350px) {
     .titulo-formulario {
         margin-top: 3rem;
-        margin-bottom: 2rem;
         font-size: 3.5rem;
+    }
+    .sub-formulario {
+        margin-top: .3rem;
+        font-size: 2.5rem;
     }
     .inputs {
         padding: .5rem;

@@ -34,7 +34,31 @@
     justify-content: center;
     align-items: center;
 }
+.contenedor-detail {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(5, auto);
+}
+.detalles-item {
+    padding: 1rem;
+    grid-column: 2/5;
+    grid-row: 2/5;
+    text-align: center;
+    z-index: 1;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: auto;
+    color: white;
+    opacity: 0;
+}
+.detalles-item:hover {
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
 .imagen-producto{
+    grid-column: 1/6;
+    grid-row: 1/6;
     cursor: pointer;
     margin: auto;
     object-fit: cover;
@@ -56,6 +80,9 @@
 @media screen and (max-width: 361px) {
     .numero-cantidades {
         font-size: 2.3rem;
+    }
+    .detalles-item{
+        display: none;
     }
     .boton-detalles {
         font-size: 1.8rem;
@@ -80,6 +107,9 @@
     .numero-cantidades {
         font-size: 2.3rem;
     }
+    .detalles-item {
+        display: none;
+    }
     .boton-detalles {
         font-size: 2rem;
         padding: .3rem;
@@ -102,6 +132,9 @@
 @media screen and (max-width: 687px) and (min-width: 450px) {
     .numero-cantidades {
         font-size: 2.3rem;
+    }
+    .detalles-item {
+        display: none;
     }
     .boton-detalles {
         font-size: 2.4rem;
@@ -126,6 +159,9 @@
     .numero-cantidades {
         font-size: 2.5rem;
     }
+    .detalles-item {
+        display: none;
+    }
     .boton-detalles {
         font-size: 2.6rem;
         padding: .7rem;
@@ -149,6 +185,9 @@
     .numero-cantidades {
         font-size: 2.8rem;
     }
+    .detalles-item {
+        font-size: 2.1;
+    }
     .boton-detalles {
         font-size: 2.9rem;
         padding: 1rem;
@@ -171,6 +210,9 @@
 @media screen and (min-width: 1110px) and (max-width: 1350px) {
     .numero-cantidades {
         font-size: 2.9rem;
+    }
+    .detalles-item {
+        font-size: 2.3;
     }
     .boton-detalles {
         font-size: 3rem;

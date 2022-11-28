@@ -9,7 +9,10 @@ const ItemDetail = ({producto}) => {
     return (
         <div className='producto-detail'>
             <div className='datos-producto-detail'>
-                <img className='imagen-producto-detail' src={producto.imagen} alt="Foto de Producto" />
+                <div className='contenedor-detalles'>
+                    <img className='imagen-producto-detail' src={producto.imagen} alt="Foto de Producto" />
+                    <p className='detalles'>{producto.descripcion}</p>
+                </div>
                 <p className='nombre-producto-detail'>{producto.nombre}</p>
                 <p className='precio-producto-detail'>${producto.precio}</p>
                 {
