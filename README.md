@@ -12,6 +12,7 @@
 -Todo se conecta con la base de datos de Firebase donde a cada pedido nos indica el nombre, telefono y email del cliente, asi como los detalles del pedido y la fecha y hora del mismo
 -El dueño del emprendimiento puede actualizar y agregar productos solo actualizando Firebase
 -La Web es full responsive para todos los dispositivos
+-Se usan Toastify y Sweet Alert para mejorar la interactividad del usuario con el carrito de compras y las notificaciones.
 
 #### Páginas
 
