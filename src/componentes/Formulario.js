@@ -3,8 +3,8 @@ import "../styles/Formulario.css";
 
 const Formulario = ({addOrder}) => {
         const [nombre, setNombre] = useState("");
-        const [telefono, setTelefono] = useState();
-        const [email, setEmail] = useState();
+        const [telefono, setTelefono] = useState("");
+        const [email, setEmail] = useState("");
         function createCliente () {
             const cliente = {nombre, telefono, email}
             addOrder(cliente);

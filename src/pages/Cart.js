@@ -64,7 +64,7 @@ const Cart = () => {
                             </button>
                             <p className='total'>Valor Total: ${total}</p>
                         </div>
-                        <Formulario addOrder={ data => terminarCompra(data)} />
+                        <Formulario addOrder={data => terminarCompra(data)} />
                     </div>
                     : <Link to={process.env.PUBLIC_URL + "/productos"} className= "carritoVacio">Volver a Productos</Link>
                 }

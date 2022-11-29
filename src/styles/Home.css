@@ -312,7 +312,7 @@ iframe{
         padding-top: .7rem;
         padding-bottom: .7rem;
         margin-top: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
     .categorias-home {
         gap: 1rem;
@@ -388,7 +388,7 @@ iframe{
         font-size: 2.3rem;
     }
     .contenedor-iframe {
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
     }
     iframe {
         width: 100%;
