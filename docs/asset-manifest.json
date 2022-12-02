@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dulcecapricho/static/css/main.98aa2110.css",
+    "main.css": "/dulcecapricho/static/css/main.06ad6f16.css",
     "main.js": "/dulcecapricho/static/js/main.aa83ae16.js",
     "static/media/inicio.mp4": "/dulcecapricho/static/media/inicio.5c8cc7f6f278493267fb.mp4",
     "static/media/nosotros.mp4": "/dulcecapricho/static/media/nosotros.6124314ccc23cff8049f.mp4",
@@ -14,11 +14,11 @@
     "static/media/portada.jpg": "/dulcecapricho/static/media/portada.d3dbcbebc5b2a3e7ca8a.jpg",
     "static/media/copyright.ico": "/dulcecapricho/static/media/copyright.bac4f0a6a97e0fbd6f71.ico",
     "index.html": "/dulcecapricho/index.html",
-    "main.98aa2110.css.map": "/dulcecapricho/static/css/main.98aa2110.css.map",
+    "main.06ad6f16.css.map": "/dulcecapricho/static/css/main.06ad6f16.css.map",
     "main.aa83ae16.js.map": "/dulcecapricho/static/js/main.aa83ae16.js.map"
   },
   "entrypoints": [
-    "static/css/main.98aa2110.css",
+    "static/css/main.06ad6f16.css",
     "static/js/main.aa83ae16.js"
   ]
 }
